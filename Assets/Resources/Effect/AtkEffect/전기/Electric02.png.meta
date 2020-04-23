@@ -1,0 +1,1202 @@
+fileFormatVersion: 2
+guid: 3a5d099838f6ee5469c30f3d8657904d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Electric02_0
+    21300002: Electric02_1
+    21300004: Electric02_2
+    21300006: Electric02_3
+    21300008: Electric02_4
+    21300010: Electric02_5
+    21300012: Electric02_6
+    21300014: Electric02_7
+    21300016: Electric02_8
+    21300018: Electric02_9
+    21300020: Electric02_10
+    21300022: Electric02_11
+    21300024: Electric02_12
+    21300026: Electric02_13
+    21300028: Electric02_14
+    21300030: Electric02_15
+    21300032: Electric02_16
+    21300034: Electric02_17
+    21300036: Electric02_18
+    21300038: Electric02_19
+    21300040: Electric02_20
+    21300042: Electric02_21
+    21300044: Electric02_22
+    21300046: Electric02_23
+    21300048: Electric02_24
+    21300050: Electric02_25
+    21300052: Electric02_26
+    21300054: Electric02_27
+    21300056: Electric02_28
+    21300058: Electric02_29
+    21300060: Electric02_30
+    21300062: Electric02_31
+    21300064: Electric02_32
+    21300066: Electric02_33
+    21300068: Electric02_34
+    21300070: Electric02_35
+    21300072: Electric02_36
+    21300074: Electric02_37
+    21300076: Electric02_38
+    21300078: Electric02_39
+    21300080: Electric02_40
+    21300082: Electric02_41
+    21300084: Electric02_42
+    21300086: Electric02_43
+    21300088: Electric02_44
+    21300090: Electric02_45
+    21300092: Electric02_46
+    21300094: Electric02_47
+    21300096: Electric02_48
+    21300098: Electric02_49
+    21300100: Electric02_50
+    21300102: Electric02_51
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Electric02_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77eca2fabbfc53c4ba199c1db382eca3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5daf1854bad13f4ba056f7276bd4a25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1352492333d879947a1bb29003ce62f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c59a4e11a8ecb4aa2f416ce2353cfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30a3895b827baa46a3151ddc79faadf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d919f9a0cd88440b08852b594ff423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e73eeaa973d2b742923154c855326f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1687.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631780e55b61ef1419aee094135d3142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25936777856bba44a0f9f8adb28b50a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67ea3589f07b3f469a4fcd0f964a897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261862791ec0ba9408882a9e2242c2f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee1414cab19e6044b7f2c8c36a4233a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10ae4b8a8180b24ba9b38f317949ae8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a58defe04e108f4fb0a27d015d1fe25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf553c8adeb2f5f4da3b31ac9c192bc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1406.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5d911faeb2cf0041893c58fc09c8aa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d97864e07e4f94e9c4206f22b99f75
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda262e6a8108de4e98e8ca5086f097a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f2193cc3a63b24408083ca712924cc3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48984d9955f380342b4936986416f481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042354393ee9e554d8937c9608a154d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f035b01b4af6334f8b0ca598d12dc33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ff66ee5c4eead4db0ce5239f00ebc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1125.7144
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4031c71ef37de2940a1c69c55c5d6f99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23563566e05e9b4980ed2a2fdab5978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee96b2dfa13b1434d93f66d8583cd3d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_26
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08b4377681851e41bb6eb62d5ce09f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_27
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aead114e9520c2147aba703cf228295b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d4b3241eb3b264a8d1af3f1044d222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8095f6394fcd20f42b57708cfb86f5da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63921566e1762434494ae060497244f7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_31
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 844.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4a1ec59fcd496418969b18060fa236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa465cf518fcc7d438244ac633d41ffd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9cf4f05a24b074188e11647bbe6031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_34
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe62f5990832504f84cd02f85cc42d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_35
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc135f64a12b544a8ee252ef086a2cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_36
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccda1dc30ef6b124ba306c0feb931fed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_37
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3da576ded42dba46872e413da9298b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_38
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d87cdde397a684daccdce350ff99da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_39
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 563.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2261ff4932158444c93830541216dfa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b031905fbec00b04ebd40cdc1c6c6121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_41
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e082ddd2a1b1cc4dba15a3cf74500e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_42
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687fcb8873471ac4bbe00579011fcb52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_43
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b5417eb14c74544db6930c6d85bbdcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_44
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e25a1ffad60167e48b326d077d58d343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_45
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b04036ec61e68c4bb2f94e38cb46787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_46
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98f31f1417c9474d988fd99b6ed1738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_47
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 282.7143
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300a18dd9467ead4aa1aa8b6c115194a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.7142944
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d214343d1d54e9e40a83c2f65d04a93c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_49
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1.7142944
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0d730a0fa7c3d408e58fe41267d4b3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_50
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1.7142944
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927453c550921664ba4aa4dc86f821fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric02_51
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1.7142944
+        width: 500
+        height: 281.2857
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d1f3fad588b6d40a466dabd6c5a30a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3771afee99f4ae649b91887eed6c1ed9
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,929 @@
+fileFormatVersion: 2
+guid: 6c9458ab421900344a6d5e78f342d953
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pure04_0
+    21300002: Pure04_1
+    21300004: Pure04_2
+    21300006: Pure04_3
+    21300008: Pure04_4
+    21300010: Pure04_5
+    21300012: Pure04_6
+    21300014: Pure04_7
+    21300016: Pure04_8
+    21300018: Pure04_9
+    21300020: Pure04_10
+    21300022: Pure04_11
+    21300024: Pure04_12
+    21300026: Pure04_13
+    21300028: Pure04_14
+    21300030: Pure04_15
+    21300032: Pure04_16
+    21300034: Pure04_17
+    21300036: Pure04_18
+    21300038: Pure04_19
+    21300040: Pure04_20
+    21300042: Pure04_21
+    21300044: Pure04_22
+    21300046: Pure04_23
+    21300048: Pure04_24
+    21300050: Pure04_25
+    21300052: Pure04_26
+    21300054: Pure04_27
+    21300056: Pure04_28
+    21300058: Pure04_29
+    21300060: Pure04_30
+    21300062: Pure04_31
+    21300064: Pure04_32
+    21300066: Pure04_33
+    21300068: Pure04_34
+    21300070: Pure04_35
+    21300072: Pure04_36
+    21300074: Pure04_37
+    21300076: Pure04_38
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pure04_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb58f79dd64ac834ca1e06c754258d03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca22403804234441b11846480dccc2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1dab3c92bc311449476372ddeb42f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 522ce31c670cbd84a9c808ecce42c03d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 413f8b487fd954248a315bf176aee4fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8363f8702497d56478cdf7b98a38c880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1406.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2058a32e2235d4247863a0bb67e3e7a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04e641a158c5a545bd81f25530f5b20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_8
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f36babf46d87c9488f8ec4a8f6f293e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_9
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc83f62b7a511c449be4653858823298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_10
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62abcc7be2c44cf489acb7b020aed2ce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_11
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e21f975a8cd4c4ebb7d0d79b740c7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_12
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab57db64d716d6545b8b077392471263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_13
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1125.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1606b7be240fc40a4a477c5175aa30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c702b2d0374aff34597444de4799ba82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_15
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a97631fb73e6694bb8d2643562c3c34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_16
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cd825f315406b46ada7e7b0be7e5bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_17
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b948817dd1c35c645b17b3c1eb4c17fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452591bcd5c5bf846ab41c5692379e58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_19
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18991b12c9fa1444a8e2d2fdead107f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_20
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 844.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fcc389d80c4684fbb507b835eb7f01
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fb048098aa6924cacaa0ccba45f1e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fc2285cbd724e478a05cdab28ad624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_23
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82262e4072424a54d88a167dc19327c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_24
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca079bdceec64743805204ae2894075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_25
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483b1dab61af7d74fb51ee789d7cadcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_26
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61683b2c1b2a70548bdbf653cdcaf1b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_27
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 563.6666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9f27ae960fa4b45bd6a28bedbe821b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4120ae0ccf4c1c049be08f54d223ef6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_29
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9809937206f2ba4429870d98017c1bde
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_30
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03803b1ad2d54c4c83fe3a64880d310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_31
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cb8d1a7e0e84847b0af3c9224bbc9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_32
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931b5a4da9038024a8866f9792c68db0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_33
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418164afc1e626645bc7cc907f4bb636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_34
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 282.66666
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46164fa4e534c5b4c92081f5e923c099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6666565
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab0c074343ca0d498a7e46bc0613fd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_36
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1.6666565
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7596c3b7bbbe01142b3779b45985c02b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_37
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1.6666565
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c2141647ca30a47b29e2bc9beb212b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure04_38
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1.6666565
+        width: 500
+        height: 281.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa68c7afbb7fe364ca7fd53b5970d34f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 862a1a8016e86f545a493d5b10a094e5
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

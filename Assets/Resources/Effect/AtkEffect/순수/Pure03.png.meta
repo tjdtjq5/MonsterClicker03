@@ -1,0 +1,719 @@
+fileFormatVersion: 2
+guid: c2c4627a0f9c8e94f8716ff3ec5da33e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Pure03_0
+    21300002: Pure03_1
+    21300004: Pure03_2
+    21300006: Pure03_3
+    21300008: Pure03_4
+    21300010: Pure03_5
+    21300012: Pure03_6
+    21300014: Pure03_7
+    21300016: Pure03_8
+    21300018: Pure03_9
+    21300020: Pure03_10
+    21300022: Pure03_11
+    21300024: Pure03_12
+    21300026: Pure03_13
+    21300028: Pure03_14
+    21300030: Pure03_15
+    21300032: Pure03_16
+    21300034: Pure03_17
+    21300036: Pure03_18
+    21300038: Pure03_19
+    21300040: Pure03_20
+    21300042: Pure03_21
+    21300044: Pure03_22
+    21300046: Pure03_23
+    21300048: Pure03_24
+    21300050: Pure03_25
+    21300052: Pure03_26
+    21300054: Pure03_27
+    21300056: Pure03_28
+    21300058: Pure03_29
+    21300060: Pure03_30
+    21300062: Pure03_31
+    21300064: Pure03_32
+    21300066: Pure03_33
+    21300068: Pure03_34
+    21300070: Pure03_35
+    21300072: Pure03_36
+    21300074: Pure03_37
+    21300076: Pure03_38
+    21300078: Pure03_39
+    21300080: Pure03_40
+    21300082: Pure03_41
+    21300084: Pure03_42
+    21300086: Pure03_43
+    21300088: Pure03_44
+    21300090: Pure03_45
+    21300092: Pure03_46
+    21300094: Pure03_47
+    21300096: Pure03_48
+    21300098: Pure03_49
+    21300100: Pure03_50
+    21300102: Pure03_51
+    21300104: Pure03_52
+    21300106: Pure03_53
+    21300108: Pure03_54
+    21300110: Pure03_55
+    21300112: Pure03_56
+    21300114: Pure03_57
+    21300116: Pure03_58
+    21300118: Pure03_59
+    21300120: Pure03_60
+    21300122: Pure03_61
+    21300124: Pure03_62
+    21300126: Pure03_63
+    21300128: Pure03_64
+    21300130: Pure03_65
+    21300132: Pure03_66
+    21300134: Pure03_67
+    21300136: Pure03_68
+    21300138: Pure03_69
+    21300140: Pure03_70
+    21300142: Pure03_71
+    21300144: Pure03_72
+    21300146: Pure03_73
+    21300148: Pure03_74
+    21300150: Pure03_75
+    21300152: Pure03_76
+    21300154: Pure03_77
+    21300156: Pure03_78
+    21300158: Pure03_79
+    21300160: Pure03_80
+    21300162: Pure03_81
+    21300164: Pure03_82
+    21300166: Pure03_83
+    21300168: Pure03_84
+    21300170: Pure03_85
+    21300172: Pure03_86
+    21300174: Pure03_87
+    21300176: Pure03_88
+    21300178: Pure03_89
+    21300180: Pure03_90
+    21300182: Pure03_91
+    21300184: Pure03_92
+    21300186: Pure03_93
+    21300188: Pure03_94
+    21300190: Pure03_95
+    21300192: Pure03_96
+    21300194: Pure03_97
+    21300196: Pure03_98
+    21300198: Pure03_99
+    21300200: Pure03_100
+    21300202: Pure03_101
+    21300204: Pure03_102
+    21300206: Pure03_103
+    21300208: Pure03_104
+    21300210: Pure03_105
+    21300212: Pure03_106
+    21300214: Pure03_107
+    21300216: Pure03_108
+    21300218: Pure03_109
+    21300220: Pure03_110
+    21300222: Pure03_111
+    21300224: Pure03_112
+    21300226: Pure03_113
+    21300228: Pure03_114
+    21300230: Pure03_115
+    21300232: Pure03_116
+    21300234: Pure03_117
+    21300236: Pure03_118
+    21300238: Pure03_119
+    21300240: Pure03_120
+    21300242: Pure03_121
+    21300244: Pure03_122
+    21300246: Pure03_123
+    21300248: Pure03_124
+    21300250: Pure03_125
+    21300252: Pure03_126
+    21300254: Pure03_127
+    21300256: Pure03_128
+    21300258: Pure03_129
+    21300260: Pure03_130
+    21300262: Pure03_131
+    21300264: Pure03_132
+    21300266: Pure03_133
+    21300268: Pure03_134
+    21300270: Pure03_135
+    21300272: Pure03_136
+    21300274: Pure03_137
+    21300276: Pure03_138
+    21300278: Pure03_139
+    21300280: Pure03_140
+    21300282: Pure03_141
+    21300284: Pure03_142
+    21300286: Pure03_143
+    21300288: Pure03_144
+    21300290: Pure03_145
+    21300292: Pure03_146
+    21300294: Pure03_147
+    21300296: Pure03_148
+    21300298: Pure03_149
+    21300300: Pure03_150
+    21300302: Pure03_151
+    21300304: Pure03_152
+    21300306: Pure03_153
+    21300308: Pure03_154
+    21300310: Pure03_155
+    21300312: Pure03_156
+    21300314: Pure03_157
+    21300316: Pure03_158
+    21300318: Pure03_159
+    21300320: Pure03_160
+    21300322: Pure03_161
+    21300324: Pure03_162
+    21300326: Pure03_163
+    21300328: Pure03_164
+    21300330: Pure03_165
+    21300332: Pure03_166
+    21300334: Pure03_167
+    21300336: Pure03_168
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pure03_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1454.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966ceab9fb90e2c42a2d19f0f974ad8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1454.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed29debd7b780348afd4a554893a527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1454.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e80e0860ef5fe9449ff9536332abf29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1454.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea087342c6235f46b923b8b11ca6ebd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1454.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3349ba7424982354a948127443573d40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1091.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e73925730f49f4a8a1580f6e6b310b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_6
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1091.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abee3110da5857d45a5139fbecca08c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_7
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1091.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e77d53a05e2ac3459bf87196cc2a54d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1091.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0193413afba11e14cbcfa5caf9710932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_9
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1091.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0c6f119ddb706498d79623798e965a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 728.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94fbfc1a641e10b46be54ef3bf2762d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 728.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9daed73661cb341b95365038fe4fb3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_12
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 728.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3494d2132bfa96a41baf2ab9f4358d47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_13
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 728.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52cbfcbfe4d7e354c924b2a8511d16d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_14
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 728.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fe2019dea687f4b87e830e580373fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7896148a88838e4fbdc65d90edf8d51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_16
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 365.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ed7c07e4a55904391881f47331ec56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 365.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc95a351414bfd9429ac7d067aa85618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_18
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 365.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce52ba1c99ad81458bc25b5345c0ceb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_19
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 365.4
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7462287d30607644ab4b0e214ed68121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2.399994
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b5f2360d6457d49ab675ca77a2583b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pure03_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2.399994
+        width: 500
+        height: 363.6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd7283b7dd42904983e5fb1f314e69d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 57ed3cfb8ab11b74c9a491f0f9948673
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

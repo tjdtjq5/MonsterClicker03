@@ -1,0 +1,228 @@
+인덱스	속성	이름	등급(성)	사용가능 레벨	작동 시간(초)	쿨 타임(턴)	스킬 공격력	타격 횟수	효과	적용 확률(%)	데미지	적용 턴 수	피격자 데미지 감소(%)	공격자의 수치 변화	다음 단계	필요 학습지 양	필요 속성 학습지 양	공격력	방어력	체력	이동 속도	공격 속도	크리티컬 확률(%)	이펙트
+string	string	string	int	int	float	int	float	int	string	float	float	int	float	float	string	int	int	float	float	float	float	float	float	string
+Skill001	Pure00	기본 공격	★	1	0.6	0	10	1	null	null	null	null	null	null	null	null	null	0	0	0	0	0	0	null
+Skill002	Pure01	신성한 빛	★		1.1	0	30	1	null	null	null	null	null	null	Skill003	10	2	5	5	30	0	0	0	Magic FX 06
+Skill003	Pure01	신성한 빛	★★		1.1	0	60	1	null	null	null	null	null	null	Skill004	20	4	10	10	60	0	0	0	Magic FX 06
+Skill004	Pure01	신성한 빛	★★★		1.1	0	120	1	null	null	null	null	null	null	Skill005	40	8	20	20	120	0	0	0	Magic FX 06
+Skill005	Pure01	신성한 빛	★★★★		1.1	1	240	1	null	null	null	null	null	null	Skill006	80	16	40	40	240	0	0	0	Magic FX 06
+Skill006	Pure01	신성한 빛	★★★★★		1.1	1	480	1	null	null	null	null	null	null	null	null	null	80	80	480	0	0	0	Magic FX 06
+Skill007	Pure02	별사탕	★		1.1	1	14	3	null	null	null	null	null	null	Skill008	20	4	0	0	0	5	-0.02	0.2	Neon FX 19
+Skill008	Pure02	별사탕	★★		1.1	1	28	3	null	null	null	null	null	null	Skill009	40	8	0	0	0	10	-0.04	0.4	Neon FX 19
+Skill009	Pure02	별사탕	★★★		1.1	1	56	3	null	null	null	null	null	null	Skill010	80	16	0	0	0	20	-0.08	0.8	Neon FX 19
+Skill010	Pure02	별사탕	★★★★		1.1	2	112	3	null	null	null	null	null	null	Skill011	160	32	0	0	0	40	-0.16	1.6	Neon FX 19
+Skill011	Pure02	별사탕	★★★★★		1.1	2	224	3	null	null	null	null	null	null	null	null	null	0	0	0	80	-0.32	3.2	Neon FX 19
+Skill012	Pure03	할퀴기	★		1.5	1	30	2	null	null	null	null	null	null	Skill013	40	8	10	10	60	0	0	0	Fire FX 40
+Skill013	Pure03	할퀴기	★★		1.5	1	60	2	null	null	null	null	null	null	Skill014	80	16	20	20	120	0	0	0	Fire FX 40
+Skill014	Pure03	할퀴기	★★★		1.5	1	120	2	null	null	null	null	null	null	Skill015	160	32	40	40	240	0	0	0	Fire FX 40
+Skill015	Pure03	할퀴기	★★★★		1.5	2	240	2	null	null	null	null	null	null	Skill016	240	64	80	80	480	0	0	0	Fire FX 40
+Skill016	Pure03	할퀴기	★★★★★		1.5	2	480	2	null	null	null	null	null	null	null	null	null	160	160	960	0	0	0	Fire FX 40
+Skill017	Pure04	토끼의 축복	★		1.6	2	0	1	회복	null	null	null	null	전체 HP의 3% 만큼 회복	Skill018	60	12	0	0	0	10	-0.04	0.4	Neon Vfx 57
+Skill018	Pure04	토끼의 축복	★★		1.6	2	0	1	회복	null	null	null	null	전체 HP의 6% 만큼 회복	Skill019	120	24	0	0	0	20	-0.08	0.8	Neon Vfx 57
+Skill019	Pure04	토끼의 축복	★★★		1.6	2	0	1	회복	null	null	null	null	전체 HP의 9% 만큼 회복	Skill020	240	48	0	0	0	40	-0.16	1.6	Neon Vfx 57
+Skill020	Pure04	토끼의 축복	★★★★		1.6	3	0	1	회복	null	null	null	null	전체 HP의 12% 만큼 회복	Skill021	480	96	0	0	0	80	-0.32	3.2	Neon Vfx 57
+Skill021	Pure04	토끼의 축복	★★★★★		1.6	3	0	1	회복	null	null	null	null	전체 HP의 15% 만큼 회복	null	null	null	0	0	0	160	-0.64	6.4	Neon Vfx 57
+Skill022	Pure05	흡수	★		3.45	3	8	12	회복	null	null	null	null	적용 데미지 만큼 HP 회복	Skill023	100	20	20	20	120	20	-0.08	0.8	Magic FX 09
+Skill023	Pure05	흡수	★★		3.45	3	16	12	회복	null	null	null	null	적용 데미지 만큼 HP 회복	Skill024	200	40	40	40	240	40	-0.16	1.6	Magic FX 09
+Skill024	Pure05	흡수	★★★		3.45	3	32	12	회복	null	null	null	null	적용 데미지 만큼 HP 회복	Skill025	400	80	80	80	480	80	-0.32	3.2	Magic FX 09
+Skill025	Pure05	흡수	★★★★		3.45	4	64	12	회복	null	null	null	null	적용 데미지 만큼 HP 회복	Skill026	800	160	160	160	960	160	-0.64	6.4	Magic FX 09
+Skill026	Pure05	흡수	★★★★★		3.45	4	128	12	회복	null	null	null	null	적용 데미지 만큼 HP 회복	null	null	null	320	320	1920	320	-1.28	12.8	Magic FX 09
+Skill027	Poison01	칙칙한 빛	★		1.1	0	30	1	null	null	null	null	null	null	Skill028	10	2	5	5	30	0	0	0	Water FX 24
+Skill028	Poison01	칙칙한 빛	★★		1.1	0	60	1	null	null	null	null	null	null	Skill029	20	4	10	10	60	0	0	0	Water FX 24
+Skill029	Poison01	칙칙한 빛	★★★		1.1	0	120	1	null	null	null	null	null	null	Skill030	40	8	20	20	120	0	0	0	Water FX 24
+Skill030	Poison01	칙칙한 빛	★★★★		1.1	1	240	1	null	null	null	null	null	null	Skill031	80	16	40	40	240	0	0	0	Water FX 24
+Skill031	Poison01	칙칙한 빛	★★★★★		1.1	1	480	1	null	null	null	null	null	null	null	null	null	80	80	480	0	0	0	Water FX 24
+Skill032	Poison02	냄새 공격	★		1.4	1	10	2	null	null	null	null	null	null	Skill033	20	4	0	0	0	5	-0.02	0.2	Magic FX 18
+Skill033	Poison02	냄새 공격	★★		1.4	1	20	2	null	null	null	null	null	null	Skill034	40	8	0	0	0	10	-0.04	0.4	Magic FX 18
+Skill034	Poison02	냄새 공격	★★★		1.4	1	40	2	null	null	null	null	null	null	Skill035	80	16	0	0	0	20	-0.08	0.8	Magic FX 18
+Skill035	Poison02	냄새 공격	★★★★		1.4	2	80	2	null	null	null	null	null	null	Skill036	160	32	0	0	0	40	-0.16	1.6	Magic FX 18
+Skill036	Poison02	냄새 공격	★★★★★		1.4	2	160	2	null	null	null	null	null	null	null	null	null	0	0	0	80	-0.32	3.2	Magic FX 18
+Skill037	Poison03	가스 살포	★		3.45	1	2	12	null	null	null	null	null	null	Skill038	40	8	10	10	60	0	0	0	Magic FX 02
+Skill038	Poison03	가스 살포	★★		3.45	1	4	12	null	null	null	null	null	null	Skill039	80	16	20	20	120	0	0	0	Magic FX 02
+Skill039	Poison03	가스 살포	★★★		3.45	1	8	12	null	null	null	null	null	null	Skill040	160	32	40	40	240	0	0	0	Magic FX 02
+Skill040	Poison03	가스 살포	★★★★		3.45	2	16	12	null	null	null	null	null	null	Skill041	240	64	80	80	480	0	0	0	Magic FX 02
+Skill041	Poison03	가스 살포	★★★★★		3.45	2	32	12	null	null	null	null	null	null	null	null	null	160	160	960	0	0	0	Magic FX 02
+Skill042	Poison04	벼룩 뿌리기	★		1.1	2	7	4	독	40	20	2	null	null	Skill043	60	12	0	0	0	10	-0.04	0.4	Magic FX 04
+Skill043	Poison04	벼룩 뿌리기	★★		1.1	2	14	4	독	40	40	2	null	null	Skill044	120	24	0	0	0	20	-0.08	0.8	Magic FX 04
+Skill044	Poison04	벼룩 뿌리기	★★★		1.1	2	28	4	독	50	80	2	null	null	Skill045	240	48	0	0	0	40	-0.16	1.6	Magic FX 04
+Skill045	Poison04	벼룩 뿌리기	★★★★		1.1	3	56	4	독	50	160	3	null	null	Skill046	480	96	0	0	0	80	-0.32	3.2	Magic FX 04
+Skill046	Poison04	벼룩 뿌리기	★★★★★		1.1	3	112	4	독	60	320	3	null	null	null	null	null	0	0	0	160	-0.64	6.4	Magic FX 04
+Skill047	Poison05	담배연기	★		1.6	3	8	5	독, 자해	60	30	3	null	전체 HP의 10% 만큼 피해	Skill048	100	20	20	20	120	20	-0.08	0.8	Transition FX 25
+Skill048	Poison05	담배연기	★★		1.6	3	16	5	독, 자해	60	60	3	null	전체 HP의 10% 만큼 피해	Skill049	200	40	40	40	240	40	-0.16	1.6	Transition FX 25
+Skill049	Poison05	담배연기	★★★		1.6	3	32	5	독, 자해	70	120	3	null	전체 HP의 10% 만큼 피해	Skill050	400	80	80	80	480	80	-0.32	3.2	Transition FX 25
+Skill050	Poison05	담배연기	★★★★		1.6	4	64	5	독, 자해	70	240	3	null	전체 HP의 10% 만큼 피해	Skill051	800	160	160	160	960	160	-0.64	6.4	Transition FX 25
+Skill051	Poison05	담배연기	★★★★★		1.6	4	128	5	독, 자해	80	480	3	null	전체 HP의 10% 만큼 피해	null	null	null	320	320	1920	320	-1.28	12.8	Transition FX 25
+Skill052	Fight01	거센 빛	★		1.45	0	3	8	null	null	null	null	null	null	Skill053	10	2	5	5	30	0	0	0	Gun Shot FX 13
+Skill053	Fight01	거센 빛	★★		1.45	0	6	8	null	null	null	null	null	null	Skill054	20	4	10	10	60	0	0	0	Gun Shot FX 13
+Skill054	Fight01	거센 빛	★★★		1.45	0	12	8	null	null	null	null	null	null	Skill055	40	8	20	20	120	0	0	0	Gun Shot FX 13
+Skill055	Fight01	거센 빛	★★★★		1.45	1	24	8	null	null	null	null	null	null	Skill056	80	16	40	40	240	0	0	0	Gun Shot FX 13
+Skill056	Fight01	거센 빛	★★★★★		1.45	1	48	8	null	null	null	null	null	null	null	null	null	80	80	480	0	0	0	Gun Shot FX 13
+Skill057	Fight02	막 때리기	★		0.55	1	14	3	null	null	null	null	null	null	Skill058	20	4	0	0	0	5	-0.02	0.2	Gun Shot FX 03
+Skill058	Fight02	막 때리기	★★		0.55	1	28	3	null	null	null	null	null	null	Skill059	40	8	0	0	0	10	-0.04	0.4	Gun Shot FX 03
+Skill059	Fight02	막 때리기	★★★		0.55	1	56	3	null	null	null	null	null	null	Skill060	80	16	0	0	0	20	-0.08	0.8	Gun Shot FX 03
+Skill060	Fight02	막 때리기	★★★★		0.55	2	112	3	null	null	null	null	null	null	Skill061	160	32	0	0	0	40	-0.16	1.6	Gun Shot FX 03
+Skill061	Fight02	막 때리기	★★★★★		0.55	2	224	3	null	null	null	null	null	null	null	null	null	0	0	0	80	-0.32	3.2	Gun Shot FX 03
+Skill062	Fight03	꿀밤	★		0.6	1	62	1	null	null	null	null	null	null	Skill063	40	8	10	10	60	0	0	0	Gun Shot FX 30
+Skill063	Fight03	꿀밤	★★		0.4	1	124	1	null	null	null	null	null	null	Skill064	80	16	20	20	120	0	0	0	Gun Shot FX 30
+Skill064	Fight03	꿀밤	★★★		0.4	1	248	1	null	null	null	null	null	null	Skill065	160	32	40	40	240	0	0	0	Gun Shot FX 30
+Skill065	Fight03	꿀밤	★★★★		0.4	2	496	1	null	null	null	null	null	null	Skill066	240	64	80	80	480	0	0	0	Gun Shot FX 30
+Skill066	Fight03	꿀밤	★★★★★		0.4	2	992	1	null	null	null	null	null	null	null	null	null	160	160	960	0	0	0	Gun Shot FX 30
+Skill067	Fight04	내려찍기	★		0.4	2	27	3	마비	30	null	1	null	null	Skill068	60	12	0	0	0	10	-0.04	0.4	Gun Shot FX 21
+Skill068	Fight04	내려찍기	★★		0.4	2	54	3	마비	30	null	1	null	null	Skill069	120	24	0	0	0	20	-0.08	0.8	Gun Shot FX 21
+Skill069	Fight04	내려찍기	★★★		0.4	2	108	3	마비	40	null	1	null	null	Skill070	240	48	0	0	0	40	-0.16	1.6	Gun Shot FX 21
+Skill070	Fight04	내려찍기	★★★★		0.4	3	216	3	마비	40	null	1	null	null	Skill071	480	96	0	0	0	80	-0.32	3.2	Gun Shot FX 21
+Skill071	Fight04	내려찍기	★★★★★		0.4	3	432	3	마비	50	null	1	null	null	null	null	null	0	0	0	160	-0.64	6.4	Gun Shot FX 21
+Skill072	Fight05	기 모아 치기	★		1.05	3	100	1	마비	30	null	2	null	null	Skill073	100	20	20	20	120	20	-0.08	0.8	Gun Shot FX 11
+Skill073	Fight05	기 모아 치기	★★		1.05	3	200	1	마비	40	null	2	null	null	Skill074	200	40	40	40	240	40	-0.16	1.6	Gun Shot FX 11
+Skill074	Fight05	기 모아 치기	★★★		1.05	3	400	1	마비	50	null	2	null	null	Skill075	400	80	80	80	480	80	-0.32	3.2	Gun Shot FX 11
+Skill075	Fight05	기 모아 치기	★★★★		1.05	4	800	1	마비	60	null	2	null	null	Skill076	800	160	160	160	960	160	-0.64	6.4	Gun Shot FX 11
+Skill076	Fight05	기 모아 치기	★★★★★		1.05	4	1600	1	마비	70	null	2	null	null	null	null	null	320	320	1920	320	-1.28	12.8	Gun Shot FX 11
+Skill077	Fire01	뜨거운 빛	★		0.6	0	30	1	null	null	null	null	null	null	Skill078	10	2	5	5	30	0	0	0	Fire FX 36
+Skill078	Fire01	뜨거운 빛	★★		0.6	0	60	1	null	null	null	null	null	null	Skill079	20	4	10	10	60	0	0	0	Fire FX 36
+Skill079	Fire01	뜨거운 빛	★★★		0.6	0	120	1	null	null	null	null	null	null	Skill080	40	8	20	20	120	0	0	0	Fire FX 36
+Skill080	Fire01	뜨거운 빛	★★★★		0.6	1	240	1	화상	30	30	2	null	null	Skill081	80	16	40	40	240	0	0	0	Fire FX 36
+Skill081	Fire01	뜨거운 빛	★★★★★		0.6	1	480	1	화상	40	30	2	null	null	null	null	null	80	80	480	0	0	0	Fire FX 36
+Skill082	Fire02	눈 싸움	★		1.7	0	30	1	null	null	null	null	null	null	Skill083	10	2	5	5	30	0	0	0	Neon VFX 45
+Skill083	Fire02	눈 싸움	★★		1.7	0	60	1	null	null	null	null	null	null	Skill084	20	4	10	10	60	0	0	0	Neon VFX 45
+Skill084	Fire02	눈 싸움	★★★		1.7	0	120	1	null	null	null	null	null	null	Skill085	40	8	20	20	120	0	0	0	Neon VFX 45
+Skill085	Fire02	눈 싸움	★★★★		1.7	1	240	1	화상	30	30	2	null	null	Skill086	80	16	40	40	240	0	0	0	Neon VFX 45
+Skill086	Fire02	눈 싸움	★★★★★		1.7	1	480	1	화상	40	30	2	null	null	null	null	null	80	80	480	0	0	0	Neon VFX 45
+Skill087	Fire03	불나방	★		1.7	0	10	3	null	null	null	null	null	null	Skill088	10	2	0	0	0	5	-0.02	0.2	Neon VFX 05
+Skill088	Fire03	불나방	★★		1.7	0	20	3	null	null	null	null	null	null	Skill089	20	4	0	0	0	10	-0.04	0.4	Neon VFX 05
+Skill089	Fire03	불나방	★★★		1.7	0	40	3	null	null	null	null	null	null	Skill090	40	8	0	0	0	20	-0.08	0.8	Neon VFX 05
+Skill090	Fire03	불나방	★★★★		1.7	1	80	3	화상	30	30	2	null	null	Skill091	80	16	0	0	0	40	-0.16	1.6	Neon VFX 05
+Skill091	Fire03	불나방	★★★★★		1.7	1	160	3	화상	40	30	2	null	null	null	null	null	0	0	0	80	-0.32	3.2	Neon VFX 05
+Skill092	Fire04	입김 불기	★		1	1	12	3	null	null	null	null	null	null	Skill093	15	3	10	10	60	0	0	0	Fire FX 34
+Skill093	Fire04	입김 불기	★★		1	1	24	3	null	null	null	null	null	null	Skill094	30	6	20	20	120	0	0	0	Fire FX 34
+Skill094	Fire04	입김 불기	★★★		1	1	48	3	화상	30	50	2	null	null	Skill095	60	12	40	40	240	0	0	0	Fire FX 34
+Skill095	Fire04	입김 불기	★★★★		1	2	96	3	화상	40	50	2	null	null	Skill096	120	24	80	80	480	0	0	0	Fire FX 34
+Skill096	Fire04	입김 불기	★★★★★		1	2	192	3	화상	50	50	3	null	null	null	null	null	160	160	960	0	0	0	Fire FX 34
+Skill097	Fire05	성냥개비	★		1	1	6	5	null	null	null	null	null	null	Skill098	20	4	10	10	60	0	0	0	Fire FX 08
+Skill098	Fire05	성냥개비	★★		1	1	12	5	null	null	null	null	null	null	Skill099	40	8	20	20	120	0	0	0	Fire FX 08
+Skill099	Fire05	성냥개비	★★★		1	1	24	5	화상	30	50	2	null	null	Skill100	80	16	40	40	240	0	0	0	Fire FX 08
+Skill100	Fire05	성냥개비	★★★★		1	2	48	5	화상	40	50	2	null	null	Skill101	160	32	80	80	480	0	0	0	Fire FX 08
+Skill101	Fire05	성냥개비	★★★★★		1	2	96	5	화상	50	50	3	null	null	null	null	null	160	160	960	0	0	0	Fire FX 08
+Skill102	Fire06	화염 포	★		1.3	1	12	4	null	null	null	null	null	null	Skill103	30	6	0	0	0	10	-0.04	0.4	Fire FX 11
+Skill103	Fire06	화염 포	★★		1.3	1	25	4	null	null	null	null	null	null	Skill104	60	12	0	0	0	20	-0.08	0.8	Fire FX 11
+Skill104	Fire06	화염 포	★★★		1.3	1	50	4	화상	30	50	2	null	null	Skill105	120	24	0	0	0	40	-0.16	1.6	Fire FX 11
+Skill105	Fire06	화염 포	★★★★		1.3	2	100	4	화상	40	50	2	null	null	Skill106	240	48	0	0	0	80	-0.32	3.2	Fire FX 11
+Skill106	Fire06	화염 포	★★★★★		1.3	2	200	4	화상	50	50	3	null	null	null	null	null	0	0	0	160	-0.64	6.4	Fire FX 11
+Skill107	Fire07	쥐불놀이	★		1.3	2	15	4	null	null	null	null	null	null	Skill108	40	8	15	15	90	0	0	0	Fire FX 18
+Skill108	Fire07	쥐불놀이	★★		1.3	2	30	4	화상	30	70	2	null	null	Skill109	80	16	30	30	180	0	0	0	Fire FX 18
+Skill109	Fire07	쥐불놀이	★★★		1.3	2	60	4	화상	40	70	2	null	null	Skill110	160	32	60	60	360	0	0	0	Fire FX 18
+Skill110	Fire07	쥐불놀이	★★★★		1.3	3	120	4	화상	50	70	3	null	null	Skill111	240	64	120	120	720	0	0	0	Fire FX 18
+Skill111	Fire07	쥐불놀이	★★★★★		1.3	3	240	4	화상	60	70	3	null	null	null	null	null	240	240	1440	0	0	0	Fire FX 18
+Skill112	Fire08	불 감옥	★		3.45	2	25	3	null	null	null	null	null	null	Skill113	60	12	15	15	90	0	0	0	Fire FX 26
+Skill113	Fire08	불 감옥	★★		3.45	2	50	3	화상	30	70	2	null	null	Skill114	120	24	30	30	180	0	0	0	Fire FX 26
+Skill114	Fire08	불 감옥	★★★		3.45	2	100	3	화상	40	70	2	null	null	Skill115	240	48	60	60	360	0	0	0	Fire FX 26
+Skill115	Fire08	불 감옥	★★★★		3.45	3	200	3	화상	50	70	3	null	null	Skill116	480	96	120	120	720	0	0	0	Fire FX 26
+Skill116	Fire08	불 감옥	★★★★★		3.45	3	400	3	화상	60	70	3	null	null	null	null	null	240	240	1440	0	0	0	Fire FX 26
+Skill117	Fire09	불덩이 낙하	★		2.2	2	21	4	null	null	null	null	null	null	Skill118	80	16	0	0	0	15	-0.05	0.5	Fire FX 51
+Skill118	Fire09	불덩이 낙하	★★		2.2	2	42	4	화상	30	70	2	null	null	Skill119	160	32	0	0	0	30	-0.1	1	Fire FX 51
+Skill119	Fire09	불덩이 낙하	★★★		2.2	2	84	4	화상	40	70	2	null	null	Skill120	320	64	0	0	0	60	-0.2	2	Fire FX 51
+Skill120	Fire09	불덩이 낙하	★★★★		2.2	3	168	4	화상	50	70	3	null	null	Skill121	640	128	0	0	0	120	-0.4	4	Fire FX 51
+Skill121	Fire09	불덩이 낙하	★★★★★		2.2	3	336	4	화상	60	70	3	null	null	null	null	null	0	0	0	240	-0.8	8	Fire FX 51
+Skill122	Fire10	화형	★		1.1	3	100	1	화상	30	90	2	null	null	Skill123	100	20	20	20	120	20	-0.08	0.8	Fire FX 01
+Skill123	Fire10	화형	★★		1.1	3	200	1	화상	40	90	2	null	null	Skill124	200	40	40	40	240	40	-0.16	1.6	Fire FX 01
+Skill124	Fire10	화형	★★★		1.1	3	400	1	화상	50	90	3	null	null	Skill125	400	80	80	80	480	80	-0.32	3.2	Fire FX 01
+Skill125	Fire10	화형	★★★★		1.1	4	800	1	화상	60	90	3	null	null	Skill126	800	160	160	160	960	160	-0.64	6.4	Fire FX 01
+Skill126	Fire10	화형	★★★★★		1.1	4	1600	1	화상	70	90	4	null	null	null	null	null	320	320	1920	320	-1.28	12.8	Fire FX 01
+Skill127	Water01	촉촉한 빛	★		1.1	0	30	1	null	null	null	null	null	null	Skill128	10	2	5	5	30	0	0	0	Water FX 12
+Skill128	Water01	촉촉한 빛	★★		1.1	0	60	1	null	null	null	null	null	null	Skill129	20	4	10	10	60	0	0	0	Water FX 12
+Skill129	Water01	촉촉한 빛	★★★		1.1	0	120	1	null	null	null	null	null	null	Skill130	40	8	20	20	120	0	0	0	Water FX 12
+Skill130	Water01	촉촉한 빛	★★★★		1.1	1	240	1	호흡곤란	30	null	2	30	null	Skill131	80	16	40	40	240	0	0	0	Water FX 12
+Skill131	Water01	촉촉한 빛	★★★★★		1.1	1	480	1	호흡곤란	40	null	2	40	null	null	null	null	80	80	480	0	0	0	Water FX 12
+Skill132	Water02	물방울 뿜기	★		0.8	0	30	1	null	null	null	null	null	null	Skill133	10	2	5	5	30	0	0	0	Water FX 07
+Skill133	Water02	물방울 뿜기	★★		0.8	0	60	1	null	null	null	null	null	null	Skill134	20	4	10	10	60	0	0	0	Water FX 07
+Skill134	Water02	물방울 뿜기	★★★		0.8	0	120	1	null	null	null	null	null	null	Skill135	40	8	20	20	120	0	0	0	Water FX 07
+Skill135	Water02	물방울 뿜기	★★★★		0.8	1	240	1	호흡곤란	30	null	2	30	null	Skill136	80	16	40	40	240	0	0	0	Water FX 07
+Skill136	Water02	물방울 뿜기	★★★★★		0.8	1	480	1	호흡곤란	40	null	2	40	null	null	null	null	80	80	480	0	0	0	Water FX 07
+Skill137	Water03	침 튀기기	★		1.6	0	10	3	null	null	null	null	null	null	Skill138	10	2	0	0	0	5	-0.02	0.2	Water FX 25
+Skill138	Water03	침 튀기기	★★		1.6	0	20	3	null	null	null	null	null	null	Skill139	20	4	0	0	0	10	-0.04	0.4	Water FX 25
+Skill139	Water03	침 튀기기	★★★		1.6	0	40	3	null	null	null	null	null	null	Skill140	40	8	0	0	0	20	-0.08	0.8	Water FX 25
+Skill140	Water03	침 튀기기	★★★★		1.6	1	80	3	호흡곤란	30	null	2	30	null	Skill141	80	16	0	0	0	40	-0.16	1.6	Water FX 25
+Skill141	Water03	침 튀기기	★★★★★		1.6	1	160	3	호흡곤란	40	null	2	40	null	null	null	null	0	0	0	80	-0.32	3.2	Water FX 25
+Skill142	Water04	수영하기	★		1.1	1	12	3	null	null	null	null	null	null	Skill143	15	3	10	10	60	0	0	0	Water FX 21
+Skill143	Water04	수영하기	★★		1.1	1	24	3	null	null	null	null	null	null	Skill144	30	6	20	20	120	0	0	0	Water FX 21
+Skill144	Water04	수영하기	★★★		1.1	1	48	3	호흡곤란	30	null	2	30	null	Skill145	60	12	40	40	240	0	0	0	Water FX 21
+Skill145	Water04	수영하기	★★★★		1.1	2	96	3	호흡곤란	40	null	2	40	null	Skill146	120	24	80	80	480	0	0	0	Water FX 21
+Skill146	Water04	수영하기	★★★★★		1.1	2	192	3	호흡곤란	50	null	3	50	null	null	null	null	160	160	960	0	0	0	Water FX 21
+Skill147	Water05	수중 회오리	★		1.1	1	10	4	null	null	null	null	null	null	Skill148	20	4	10	10	60	0	0	0	Water FX 10
+Skill148	Water05	수중 회오리	★★		1.1	1	20	4	null	null	null	null	null	null	Skill149	40	8	20	20	120	0	0	0	Water FX 10
+Skill149	Water05	수중 회오리	★★★		1.1	1	40	4	호흡곤란	30	null	2	30	null	Skill150	80	16	40	40	240	0	0	0	Water FX 10
+Skill150	Water05	수중 회오리	★★★★		1.1	2	80	4	호흡곤란	40	null	2	40	null	Skill151	160	32	80	80	480	0	0	0	Water FX 10
+Skill151	Water05	수중 회오리	★★★★★		1.1	2	160	4	호흡곤란	50	null	3	50	null	null	null	null	160	160	960	0	0	0	Water FX 10
+Skill152	Water06	물 대포	★		1.6	1	12	4	null	null	null	null	null	null	Skill153	30	6	0	0	0	10	-0.04	0.4	Transition FX 14
+Skill153	Water06	물 대포	★★		1.6	1	25	4	null	null	null	null	null	null	Skill154	60	12	0	0	0	20	-0.08	0.8	Transition FX 14
+Skill154	Water06	물 대포	★★★		1.6	1	50	4	호흡곤란	30	null	2	30	null	Skill155	120	24	0	0	0	40	-0.16	1.6	Transition FX 14
+Skill155	Water06	물 대포	★★★★		1.6	2	100	4	호흡곤란	40	null	2	40	null	Skill156	240	48	0	0	0	80	-0.32	3.2	Transition FX 14
+Skill156	Water06	물 대포	★★★★★		1.6	2	200	4	호흡곤란	50	null	3	50	null	null	null	null	0	0	0	160	-0.64	6.4	Transition FX 14
+Skill157	Water07	물수제비	★		1.1	2	62	1	null	null	null	null	null	null	Skill158	40	8	15	15	90	0	0	0	Water FX 11
+Skill158	Water07	물수제비	★★		1.1	2	125	1	호흡곤란	30	null	2	30	null	Skill159	80	16	30	30	180	0	0	0	Water FX 11
+Skill159	Water07	물수제비	★★★		1.1	2	250	1	호흡곤란	40	null	2	40	null	Skill160	160	32	60	60	360	0	0	0	Water FX 11
+Skill160	Water07	물수제비	★★★★		1.1	3	500	1	호흡곤란	50	null	3	50	null	Skill161	240	64	120	120	720	0	0	0	Water FX 11
+Skill161	Water07	물수제비	★★★★★		1.1	3	1000	1	호흡곤란	60	null	3	60	null	null	null	null	240	240	1440	0	0	0	Water FX 11
+Skill162	Water08	수중 감옥	★		3.45	2	25	3	null	null	null	null	null	null	Skill163	60	12	15	15	90	0	0	0	Water FX 06
+Skill163	Water08	수중 감옥	★★		3.45	2	50	3	호흡곤란	30	null	2	30	null	Skill164	120	24	30	30	180	0	0	0	Water FX 06
+Skill164	Water08	수중 감옥	★★★		3.45	2	100	3	호흡곤란	40	null	2	40	null	Skill165	240	48	60	60	360	0	0	0	Water FX 06
+Skill165	Water08	수중 감옥	★★★★		3.45	3	200	3	호흡곤란	50	null	3	50	null	Skill166	480	96	120	120	720	0	0	0	Water FX 06
+Skill166	Water08	수중 감옥	★★★★★		3.45	3	400	3	호흡곤란	60	null	3	60	null	null	null	null	240	240	1440	0	0	0	Water FX 06
+Skill167	Water09	잠수하기	★		2	2	17	5	null	null	null	null	null	null	Skill168	80	16	0	0	0	15	-0.05	0.5	Water FX 13
+Skill168	Water09	잠수하기	★★		2	2	34	5	호흡곤란	30	null	2	30	null	Skill169	160	32	0	0	0	30	-0.1	1	Water FX 13
+Skill169	Water09	잠수하기	★★★		2	2	68	5	호흡곤란	40	null	2	40	null	Skill170	320	64	0	0	0	60	-0.2	2	Water FX 13
+Skill170	Water09	잠수하기	★★★★		2	3	136	5	호흡곤란	50	null	3	50	null	Skill171	640	128	0	0	0	120	-0.4	4	Water FX 13
+Skill171	Water09	잠수하기	★★★★★		2	3	272	5	호흡곤란	60	null	3	60	null	null	null	null	0	0	0	240	-0.8	8	Water FX 13
+Skill172	Water10	물귀신	★		1.6	3	20	5	호흡곤란	30	null	2	30	null	Skill173	100	20	20	20	120	20	-0.08	0.8	Transition FX 12
+Skill173	Water10	물귀신	★★		1.6	3	40	5	호흡곤란	40	null	2	40	null	Skill174	200	40	40	40	240	40	-0.16	1.6	Transition FX 12
+Skill174	Water10	물귀신	★★★		1.6	3	80	5	호흡곤란	50	null	3	50	null	Skill175	400	80	80	80	480	80	-0.32	3.2	Transition FX 12
+Skill175	Water10	물귀신	★★★★		1.6	4	160	5	호흡곤란	60	null	3	60	null	Skill176	800	160	160	160	960	160	-0.64	6.4	Transition FX 12
+Skill176	Water10	물귀신	★★★★★		1.6	4	320	5	호흡곤란	70	null	4	70	null	null	null	null	320	320	1920	320	-1.28	12.8	Transition FX 12
+Skill177	Electricity01	짜릿한 빛	★		0.7	0	30	1	null	null	null	null	null	null	Skill178	10	2	5	5	30	0	0	0	line 05
+Skill178	Electricity01	짜릿한 빛	★★		0.7	0	60	1	null	null	null	null	null	null	Skill179	20	4	10	10	60	0	0	0	line 05
+Skill179	Electricity01	짜릿한 빛	★★★		0.7	0	120	1	null	null	null	null	null	null	Skill180	40	8	20	20	120	0	0	0	line 05
+Skill180	Electricity01	짜릿한 빛	★★★★		0.7	1	240	1	감전	30	null	1	null	null	Skill181	80	16	40	40	240	0	0	0	line 05
+Skill181	Electricity01	짜릿한 빛	★★★★★		0.7	1	480	1	감전	40	null	1	null	null	null	null	null	80	80	480	0	0	0	line 05
+Skill182	Electricity02	쏘아보기	★		1.8	0	30	1	null	null	null	null	null	null	Skill183	10	2	5	5	30	0	0	0	Neon Vfx 26
+Skill183	Electricity02	쏘아보기	★★		1.8	0	60	1	null	null	null	null	null	null	Skill184	20	4	10	10	60	0	0	0	Neon Vfx 26
+Skill184	Electricity02	쏘아보기	★★★		1.8	0	120	1	null	null	null	null	null	null	Skill185	40	8	20	20	120	0	0	0	Neon Vfx 26
+Skill185	Electricity02	쏘아보기	★★★★		1.8	1	240	1	감전	30	null	1	null	null	Skill186	80	16	40	40	240	0	0	0	Neon Vfx 26
+Skill186	Electricity02	쏘아보기	★★★★★		1.8	1	480	1	감전	40	null	1	null	null	null	null	null	80	80	480	0	0	0	Neon Vfx 26
+Skill187	Electricity03	정전기	★		0.6	0	10	3	null	null	null	null	null	null	Skill188	10	2	0	0	0	5	-0.02	0.2	Electric FX 16
+Skill188	Electricity03	정전기	★★		0.6	0	20	3	null	null	null	null	null	null	Skill189	20	4	0	0	0	10	-0.04	0.4	Electric FX 16
+Skill189	Electricity03	정전기	★★★		0.6	0	40	3	null	null	null	null	null	null	Skill190	40	8	0	0	0	20	-0.08	0.8	Electric FX 16
+Skill190	Electricity03	정전기	★★★★		0.6	1	80	3	감전	30	null	1	null	null	Skill191	80	16	0	0	0	40	-0.16	1.6	Electric FX 16
+Skill191	Electricity03	정전기	★★★★★		0.6	1	160	3	감전	40	null	1	null	null	null	null	null	0	0	0	80	-0.32	3.2	Electric FX 16
+Skill192	Electricity04	건전지 던지기	★		1.1	1	12	3	null	null	null	null	null	null	Skill193	15	3	10	10	60	0	0	0	Electric FX 24
+Skill193	Electricity04	건전지 던지기	★★		1.1	1	24	3	null	null	null	null	null	null	Skill194	30	6	20	20	120	0	0	0	Electric FX 24
+Skill194	Electricity04	건전지 던지기	★★★		1.1	1	48	3	감전	30	null	1	null	null	Skill195	60	12	40	40	240	0	0	0	Electric FX 24
+Skill195	Electricity04	건전지 던지기	★★★★		1.1	2	96	3	감전	40	null	1	null	null	Skill196	120	24	80	80	480	0	0	0	Electric FX 24
+Skill196	Electricity04	건전지 던지기	★★★★★		1.1	2	192	3	감전	50	null	1	null	null	null	null	null	160	160	960	0	0	0	Electric FX 24
+Skill197	Electricity05	전선 휘감기	★		1.3	1	21	2	null	null	null	null	null	null	Skill198	20	4	10	10	60	0	0	0	Electric FX 14
+Skill198	Electricity05	전선 휘감기	★★		1.3	1	42	2	null	null	null	null	null	null	Skill199	40	8	20	20	120	0	0	0	Electric FX 14
+Skill199	Electricity05	전선 휘감기	★★★		1.3	1	84	2	감전	30	null	1	null	null	Skill200	80	16	40	40	240	0	0	0	Electric FX 14
+Skill200	Electricity05	전선 휘감기	★★★★		1.3	2	168	2	감전	40	null	1	null	null	Skill201	160	32	80	80	480	0	0	0	Electric FX 14
+Skill201	Electricity05	전선 휘감기	★★★★★		1.3	2	336	2	감전	50	null	1	null	null	null	null	null	160	160	960	0	0	0	Electric FX 14
+Skill202	Electricity06	스턴건	★		0.7	1	25	2	null	null	null	null	null	null	Skill203	30	6	0	0	0	10	-0.04	0.4	Electric FX 18
+Skill203	Electricity06	스턴건	★★		0.7	1	50	2	null	null	null	null	null	null	Skill204	60	12	0	0	0	20	-0.08	0.8	Electric FX 18
+Skill204	Electricity06	스턴건	★★★		0.7	1	100	2	감전	30	null	1	null	null	Skill205	120	24	0	0	0	40	-0.16	1.6	Electric FX 18
+Skill205	Electricity06	스턴건	★★★★		0.7	2	200	2	감전	40	null	1	null	null	Skill206	240	48	0	0	0	80	-0.32	3.2	Electric FX 18
+Skill206	Electricity06	스턴건	★★★★★		0.7	2	400	2	감전	50	null	1	null	null	null	null	null	0	0	0	160	-0.64	6.4	Electric FX 18
+Skill207	Electricity07	고전압	★		1.85	2	15	4	null	null	null	null	null	null	Skill208	40	8	15	15	90	0	0	0	Electric FX 30
+Skill208	Electricity07	고전압	★★		1.85	2	30	4	감전	30	null	1	null	null	Skill209	80	16	30	30	180	0	0	0	Electric FX 30
+Skill209	Electricity07	고전압	★★★		1.85	2	60	4	감전	40	null	1	null	null	Skill210	160	32	60	60	360	0	0	0	Electric FX 30
+Skill210	Electricity07	고전압	★★★★		1.85	3	120	4	감전	50	null	1	null	null	Skill211	240	64	120	120	720	0	0	0	Electric FX 30
+Skill211	Electricity07	고전압	★★★★★		1.85	3	240	4	감전	60	null	2	null	null	null	null	null	240	240	1440	0	0	0	Electric FX 30
+Skill212	Electricity08	전기 감옥	★		1.6	2	15	5	null	null	null	null	null	null	Skill213	60	12	15	15	90	0	0	0	Electric FX 22
+Skill213	Electricity08	전기 감옥	★★		1.6	2	30	5	감전	30	null	1	null	null	Skill214	120	24	30	30	180	0	0	0	Electric FX 22
+Skill214	Electricity08	전기 감옥	★★★		1.6	2	60	5	감전	40	null	1	null	null	Skill215	240	48	60	60	360	0	0	0	Electric FX 22
+Skill215	Electricity08	전기 감옥	★★★★		1.6	3	120	5	감전	50	null	1	null	null	Skill216	480	96	120	120	720	0	0	0	Electric FX 22
+Skill216	Electricity08	전기 감옥	★★★★★		1.6	3	240	5	감전	60	null	2	null	null	null	null	null	240	240	1440	0	0	0	Electric FX 22
+Skill217	Electricity09	뇌우	★		2	2	29	3	null	null	null	null	null	null	Skill218	80	16	0	0	0	15	-0.05	0.5	Electric FX 36
+Skill218	Electricity09	뇌우	★★		2	2	58	3	감전	30	null	1	null	null	Skill219	160	32	0	0	0	30	-0.1	1	Electric FX 36
+Skill219	Electricity09	뇌우	★★★		2	2	116	3	감전	40	null	1	null	null	Skill220	320	64	0	0	0	60	-0.2	2	Electric FX 36
+Skill220	Electricity09	뇌우	★★★★		2	3	232	3	감전	50	null	1	null	null	Skill221	640	128	0	0	0	120	-0.4	4	Electric FX 36
+Skill221	Electricity09	뇌우	★★★★★		2	3	464	3	감전	60	null	2	null	null	null	null	null	0	0	0	240	-0.8	8	Electric FX 36
+Skill222	Electricity10	낙뢰	★		2	3	16	6	감전	30	null	1	null	null	Skill223	100	20	20	20	120	20	-0.08	0.8	Electric FX 32
+Skill223	Electricity10	낙뢰	★★		2	3	32	6	감전	40	null	1	null	null	Skill224	200	40	40	40	240	40	-0.16	1.6	Electric FX 32
+Skill224	Electricity10	낙뢰	★★★		2	3	64	6	감전	50	null	1	null	null	Skill225	400	80	80	80	480	80	-0.32	3.2	Electric FX 32
+Skill225	Electricity10	낙뢰	★★★★		2	4	128	6	감전	60	null	2	null	null	Skll226	800	160	160	160	960	160	-0.64	6.4	Electric FX 32
+Skill226	Electricity10	낙뢰	★★★★★		2	4	256	6	감전	70	null	2	null	null	null	null	null	320	320	1920	320	-1.28	12.8	Electric FX 32
