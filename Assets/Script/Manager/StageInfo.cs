@@ -10,11 +10,15 @@ public class StageInfo : MonoBehaviour
     }
 
     static public Vector2 Stage;
+    static public bool isEnd;
+    static public bool isWin;
 
-    public void SetStageInfo(string stage)
+    public void SetStageInfo(string stage) // 1/1/false/false
     {
-        string[] tempStageString = stage.Split('-');
+        string[] tempStageString = stage.Split('/');
         Stage = new Vector2(int.Parse(tempStageString[0]), int.Parse(tempStageString[1]));
+        isEnd = bool.Parse(tempStageString[2]);
+        isWin = bool.Parse(tempStageString[3]);
     }
 
    

@@ -16,17 +16,21 @@ public class Trun : MonoBehaviour
 
     public BattleManager battleManager;
 
+    [Header("라운드 텍스트")]
+    public GameObject roundText;
+
     public void Summon()
     {
         trunPannel.transform.position = originPos.position;
-        trunPannel.transform.GetChild(0).GetComponent<Text>().text = "몬스터 소환";
     }
 
     bool flag;
+    bool summon_flag;
     public void SummonBtn()
     {
-        if (!flag && trunPannel.transform.GetChild(0).GetComponent<Text>().text.Contains("몬스터 소환"))
+        if (!flag && !summon_flag)
         {
+            summon_flag = true;
             StartCoroutine(SummonBtnCoroutine());
         }
     }
@@ -49,34 +53,30 @@ public class Trun : MonoBehaviour
     public void TrunStart()
     {
         trunPannel.transform.position = new Vector2(1500, 1500);
-
-
-
     }
     public void PlayerTrun()
     {
         trunPannel.transform.position = originPos.position;
-        trunPannel.transform.GetChild(0).GetComponent<Text>().text = "플레이어 턴";
     }
     public void EnemyTrun()
     {
         trunPannel.transform.position = originPos.position;
-        trunPannel.transform.GetChild(0).GetComponent<Text>().text = "적 턴";
     }
     public void TurnEnd(int round)
     {
-        trunPannel.transform.position = originPos.position;
-        trunPannel.transform.GetChild(0).GetComponent<Text>().text = "";
-        string text = round + "라운드";
-        trunPannel.transform.GetChild(0).GetComponent<Text>().DOText(text, 1f).OnComplete(()=> { TrunStart();
-            battleManager.AutoAttack();
-        });
-
-
-        
+        StartCoroutine(TurnEndCoroutine(round));
     }
 
-
+    IEnumerator TurnEndCoroutine(int round)
+    {
+        trunPannel.transform.position = originPos.position;
+        roundText.GetComponent<Text>().text = round + "라운드";
+        roundText.GetComponent<Animator>().SetBool("Round", true);
+        yield return new WaitForSeconds(1.7f);
+        roundText.GetComponent<Animator>().SetBool("Round", false);
+        TrunStart();
+        battleManager.AutoAttack();
+    }
 
 
 }

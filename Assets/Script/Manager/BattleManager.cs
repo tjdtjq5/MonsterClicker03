@@ -53,7 +53,7 @@ public class BattleManager : MonoBehaviour
 
         if (enemy_hp <= 0)
         {
-            Debug.Log("게임패배");
+            Debug.Log("게임승리");
         }
     }
 

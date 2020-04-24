@@ -7,6 +7,7 @@ public class Map : MonoBehaviour
     public GameObject blackBackground;
     public GameObject stagePannel;
     bool flag;
+
     public void OnClickStage01()
     {
         StartCoroutine(OnClickStage01Coroutine());

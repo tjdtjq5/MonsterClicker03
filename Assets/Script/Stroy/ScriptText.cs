@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ScriptText : MonoBehaviour
 {
@@ -48,7 +49,7 @@ public class ScriptText : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         if (iCount == 0)
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(0.5f);
 
         flag = true;
         char[] tempChar = scripts[iCount].ToCharArray();
@@ -59,6 +60,9 @@ public class ScriptText : MonoBehaviour
         }
         flag = false;
         nextIcon.SetActive(true);
+
+        GetComponent<StroyCameraShaking>().Shaking();
+        GetComponent<StroyCaracterSetting>().SetCaracter();
     }
 
     bool nextSceneFlag;
@@ -74,6 +78,9 @@ public class ScriptText : MonoBehaviour
                     script.text = scripts[iCount];
                     nextIcon.SetActive(true);
                     flag = false;
+
+                    GetComponent<StroyCameraShaking>().Shaking();
+                    GetComponent<StroyCaracterSetting>().SetCaracter();
                 }
                 else
                 {

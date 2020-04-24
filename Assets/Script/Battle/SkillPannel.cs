@@ -80,7 +80,11 @@ public class SkillPannel : MonoBehaviour
             {
                 collTimeNum[index] = 0;
             }
-            skillPannel[index].Find("CollTime").GetChild(0).GetComponent<Image>().sprite = number[collTimeNum[index]];
+            else
+            {
+                skillPannel[index].Find("CollTime").GetChild(0).GetComponent<Image>().sprite = number[collTimeNum[index]];
+                StartCoroutine(ColltimeAniCoroutine(skillPannel[index].Find("CollTime").GetChild(0).gameObject));
+            }
 
             if (collTimeNum[index] == 0)
             {
@@ -94,4 +98,10 @@ public class SkillPannel : MonoBehaviour
         }
     }
 
+    IEnumerator ColltimeAniCoroutine(GameObject obj)
+    {
+        obj.GetComponent<Animator>().SetBool("Colltime", true);
+        yield return new WaitForSeconds(0.5f);
+        obj.GetComponent<Animator>().SetBool("Colltime", false);
+    }
 }
