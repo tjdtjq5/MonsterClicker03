@@ -13,8 +13,11 @@ public class StageInfo : MonoBehaviour
     static public bool isEnd;
     static public bool isWin;
 
-    public void SetStageInfo(string stage) // 1/1/false/false
+    public static void SetStageInfo(string stage) // 1/1/false/false
     {
+        if (stage == "")
+            return;
+
         string[] tempStageString = stage.Split('/');
         Stage = new Vector2(int.Parse(tempStageString[0]), int.Parse(tempStageString[1]));
         isEnd = bool.Parse(tempStageString[2]);

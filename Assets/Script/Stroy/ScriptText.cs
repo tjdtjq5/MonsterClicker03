@@ -21,7 +21,7 @@ public class ScriptText : MonoBehaviour
 
     private void Start()
     {
-        ScriptManager scriptManager = new ScriptManager(StageInfo.Stage);
+        ScriptManager scriptManager = new ScriptManager(StageInfo.Stage, StageInfo.isEnd, StageInfo.isWin);
         tempStringList = scriptManager.scripts;
         Script(tempStringList);
     }
@@ -88,7 +88,8 @@ public class ScriptText : MonoBehaviour
                     {
                         Debug.Log("다음씬");
                         nextSceneFlag = true;
-                        nextScene.OnNextScene();
+                        nextScene.OnNextScene((int)StageInfo.Stage.x + "/" + (int)StageInfo.Stage.y + "/"
+                            + StageInfo.isEnd + "/" + StageInfo.isWin);
                     }
                     else
                     {

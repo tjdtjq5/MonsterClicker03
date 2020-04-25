@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
@@ -16,10 +17,20 @@ public class BattleManager : MonoBehaviour
     [HideInInspector]
     public List<string> playerSkill;
 
+    [Header("blackpannel and gameendPannel")]
+    public GameObject blackpannel;
+    public GameObject game_end_pannel;
+
+    [Header("NextScene")]
+    public NextScene next_scene;
+
     int round;
 
     int player_hp;
     int enemy_hp;
+
+    bool game_set_win;
+    bool game_set_lose;
 
     private void Start()
     {
@@ -43,7 +54,7 @@ public class BattleManager : MonoBehaviour
 
         if(player_hp <= 0)
         {
-            Debug.Log("게임패배");
+            game_set_lose = true;
         }
     }
     void EnemyGetDamage(int damage)
@@ -53,7 +64,7 @@ public class BattleManager : MonoBehaviour
 
         if (enemy_hp <= 0)
         {
-            Debug.Log("게임승리");
+            game_set_win = true;
         }
     }
 
@@ -81,7 +92,14 @@ public class BattleManager : MonoBehaviour
         }
         EnemyGetDamage(damage);
 
-        EnemySkillTrun();
+        if(game_set_lose || game_set_win)
+        {
+            GameEnd();
+        }
+        else
+        {
+            EnemySkillTrun();
+        }
     }
 
     void EnemySkillTrun()
@@ -104,7 +122,14 @@ public class BattleManager : MonoBehaviour
         }
         PlayerGetDamage(damage);
 
-        trunPannel.TurnEnd(round);
+        if (game_set_lose || game_set_win)
+        {
+            GameEnd();
+        }
+        else
+        {
+            trunPannel.TurnEnd(round);
+        }
     }
 
     public void AutoAttack()
@@ -113,7 +138,6 @@ public class BattleManager : MonoBehaviour
         {
             if (skillPannel.collTimeNum[i] == 0)
             {
-                Debug.Log(i + " : " + skillPannel.collTimeNum[i]);
                 return;
             }
         }
@@ -125,4 +149,32 @@ public class BattleManager : MonoBehaviour
         StartCoroutine(SkillBtnCoroutine(GameManager.instance.skillManager.skillList[0].atkTime));
     }
 
+    bool gameend_flag;
+    string temp_stage_string;
+    void GameEnd()
+    {
+        blackpannel.SetActive(true);
+        game_end_pannel.SetActive(true);
+
+        if (game_set_win)
+        {
+            game_end_pannel.transform.Find("결과").GetComponent<Text>().text = "승리";
+            temp_stage_string = (int)StageInfo.Stage.x + "/" + (int)StageInfo.Stage.y + "/true/true";
+        }
+        if (game_set_lose)
+        {
+            game_end_pannel.transform.Find("결과").GetComponent<Text>().text = "패배";
+            temp_stage_string = (int)StageInfo.Stage.x + "/" + (int)StageInfo.Stage.y + "/true/false";
+        }
+
+        gameend_flag = true;
+    }
+
+    public void OnClickNextScene()
+    {
+        if (gameend_flag)
+        {
+            next_scene.OnNextScene(temp_stage_string);
+        }
+    }
 }

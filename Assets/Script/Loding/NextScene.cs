@@ -27,8 +27,20 @@ public class NextScene : MonoBehaviour
         }
     }
 
-    public void OnNextScene()
+    public void OnNextScene(string stage_string)
     {
+        if(stage_string != "")
+        {
+            string[] temp_strings = stage_string.Split('/');
+            if (temp_strings.Length > 4)
+                sceneName = temp_strings[4];
+            if (temp_strings[2] == "True" && SceneManager.GetActiveScene().name == "Story")
+                sceneName = "Main";
+            Debug.Log(SceneManager.GetActiveScene().name);
+            Debug.Log(temp_strings[2]);
+            StageInfo.SetStageInfo(temp_strings[0] + "/" + temp_strings[1] + "/" + temp_strings[2] + "/" + temp_strings[3] + "/");
+        }
+
         StartCoroutine(NextSceneCoroutine());
     }
 
