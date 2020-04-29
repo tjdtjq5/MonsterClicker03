@@ -819,7 +819,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 7d6fd69ee030e2e40a5a0cc00a031fdf, type: 3}
   hojin:
   - {fileID: 21300000, guid: b7b07525af56fb04a9138ce5f8d1116b, type: 3}
-  denis_kim: []
+  denis_kim:
+  - {fileID: 21300000, guid: f1a2ecb8094c0da4d8025678dce35aaa, type: 3}
+  yeunggi:
+  - {fileID: 21300000, guid: 66bf64ebafee477449d23b309b958b9c, type: 3}
   scriptStructs:
   - script: "\uD1A0\uB9AC\uB77C\uACE0 \uD574. \uADC0\uC5FD\uC9C0?"
     sprite_caracter: {fileID: 21300000, guid: 087e1df4acf51b44eb44d81ebcd2a84b, type: 3}

@@ -50,10 +50,8 @@ public class MyTime : MonoBehaviour
                 TimeSpan timestamp = dateTime - new DateTime(1970, 1, 1, 0, 0, 0);
 
                 int stopwatch = (int)timestamp.TotalSeconds - PlayerPrefs.GetInt("net", (int)timestamp.TotalSeconds);
-                Debug.Log(stopwatch + "sec");
 
                 PlayerPrefs.SetInt("net", (int)timestamp.TotalSeconds);
-
             }
         }
     }

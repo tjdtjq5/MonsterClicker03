@@ -21,6 +21,8 @@ public class StroyCaracterSetting : MonoBehaviour
     public Sprite[] hojin;
     [Header("데니스 킴")]
     public Sprite[] denis_kim;
+    [Header("영기")]
+    public Sprite[] yeunggi;
 
     [Header("캐릭터 이미지 전환 텍스트")]
     public ScriptStruct[] scriptStructs;
