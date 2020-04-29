@@ -19,8 +19,6 @@ public class UiPannelSet : MonoBehaviour
 
     private void Start()
     {
-        
-
         originPos = infoPannel.transform.position;
         tempPos = messagePannel.transform.position;
     }

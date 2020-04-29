@@ -6,78 +6,99 @@ using DG.Tweening;
 
 public class ItemBagManager : MonoBehaviour
 {
-    [Header("BlackPannel")]
-    public GameObject blackPannel;
-    public GameObject itemPannel;
-    [Header("ItemPannel")]
-    public GameObject[] itemPannels;
-    [Header("ArrowBtn")]
-    public GameObject rightBtn;
-    public GameObject leftBtn;
-    [Header("Fade_Ani")]
-    public GameObject fade_ani_obj;
+    [Header("Camera")]
+    public GameObject cam_main;
+    public GameObject cam_ui;
 
-    int current_page;
+    [Header("Item_bag")]
+    public GameObject Item_obj;
 
-    public void OnClickBag()
+    [Header("theCam_rotation")]
+    public Transform theCam_rotation;
+    public float sensibility;
+
+    [Header("Eqip_btn")]
+    public GameObject eqip_btn;
+
+    public void OnClick_itembag()
     {
-        blackPannel.SetActive(true);
-        itemPannel.SetActive(true);
-        current_page = 0;
-        SetActivePannel();
+        cam_main.SetActive(false);
+        cam_ui.SetActive(false);
+        Item_obj.SetActive(true);
     }
-    public void ExitBag()
+
+    bool first_touch_flag;
+    Vector2 first_touch_pos;
+
+    bool touch_on_flag;
+    public void Screen_Touch_On()
     {
-        itemPannel.SetActive(false);
-        blackPannel.SetActive(false);
-    }
-    void SetActivePannel()
-    {
-        for (int i = 0; i < itemPannels.Length; i++)
+        if (!touch_on_flag)
         {
-            if(i == current_page)
-                itemPannels[i].SetActive(true);
-            else
-                itemPannels[i].SetActive(false);
+            touch_on_flag = true;
+            first_touch_flag = true;
+            first_touch_pos = Input.mousePosition;
+        }
+       
+    }
+
+    public void Screen_Touch_Exit()
+    {
+        StartCoroutine(Screen_Touch_Exit_Coroutine());
+    }
+
+    IEnumerator Screen_Touch_Exit_Coroutine()
+    {
+        first_touch_flag = false;
+        theCam_rotation.DOLocalRotate(Vector3.zero, 0.5f);
+        yield return new WaitForSeconds(0.5f);
+        touch_on_flag = false;
+    }
+
+    public void Update()
+    {
+        if (first_touch_flag)
+        {
+            float temp_x = Input.mousePosition.x - first_touch_pos.x;
+            float temp_y = Input.mousePosition.y - first_touch_pos.y;
+
+            if (temp_y > 0)
+                temp_y = 0;
+
+            theCam_rotation.localRotation = Quaternion.Euler(theCam_rotation.localRotation.x + temp_y * sensibility, theCam_rotation.localRotation.y + temp_x * sensibility, theCam_rotation.localRotation.z);
         }
     }
 
-    
-    bool flag;
-    public void OnClickRight()
+    public void OnClickExit()
     {
-        if (current_page == itemPannels.Length - 1)
-            return;
-        if (flag)
-            return;
-   
-        flag = true;
-        fade_ani_obj.SetActive(true);
-        fade_ani_obj.GetComponent<Image>().DOFade(255, 0.5f);
-        current_page++;
-        SetActivePannel();
-        fade_ani_obj.GetComponent<Image>().DOFade(0, 0.5f).OnComplete(()=> {
-            flag = false;
-            fade_ani_obj.SetActive(false);
-        });
-    }
- 
-    public void OnClickLeft()
-    {
-        if (current_page == 0)
-            return;
-        if (flag)
-            return;
-
-        flag = true;
-        fade_ani_obj.SetActive(true);
-        fade_ani_obj.GetComponent<Image>().DOFade(255, 0.5f);
-        current_page--;
-        SetActivePannel();
-        fade_ani_obj.GetComponent<Image>().DOFade(0, 0.5f).OnComplete(() => {
-            flag = false;
-            fade_ani_obj.SetActive(false);
-        });
+        cam_main.SetActive(true);
+        cam_ui.SetActive(true);
+        Item_obj.SetActive(false);
     }
 
+    bool eqip_btn_flag;
+    public void Eqip_right()
+    {
+        if (!eqip_btn_flag)
+        {
+            eqip_btn_flag = true;
+            StartCoroutine(Eqip_Coroutine("right"));
+        }
+    }
+    public void Eqip_left()
+    {
+        if (!eqip_btn_flag)
+        {
+            eqip_btn_flag = true;
+            StartCoroutine(Eqip_Coroutine("left"));
+        }
+    }
+
+    IEnumerator Eqip_Coroutine(string ani)
+    {
+        eqip_btn.GetComponent<Animator>().SetBool(ani, true);
+        yield return new WaitForSeconds(.7f);
+        eqip_btn.GetComponent<Animator>().SetBool(ani, false);
+        eqip_btn_flag = false;
+    }
 }

@@ -37,12 +37,25 @@ public class Revolution : MonoBehaviour
             if (currentRevolution == 0)
             {
                 this.transform.localPosition = new Vector3(-1.37f, -2.87f, this.transform.localPosition.z);
-
             }
             else
             {
                 this.transform.localPosition = new Vector3(-0.87f, -1.94f, this.transform.localPosition.z);
             }
+        }
+
+        if (this.gameObject.tag == "Item")
+        {
+            //if (currentRevolution == 0)
+            //{
+            //    this.transform.localPosition = new Vector3(this.transform.localPosition.x + 5f,
+            //        this.transform.localPosition .y - 2.2f, this.transform.localPosition.z - 1.2f);
+            //}
+            //else
+            //{
+            //    this.transform.localPosition = new Vector3(this.transform.localPosition.x- 0.87f,
+            //        this.transform.localPosition.y - 1.94f, this.transform.localPosition.z);
+            //}
         }
     }
 
