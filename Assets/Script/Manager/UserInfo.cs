@@ -52,14 +52,14 @@ public class UserInfo : MonoBehaviour
         exp = 0;
         carrotLevel = 1;
 
-        SetItem(itemKind.albaMoneyEnhace, 100);
-        SetItem(itemKind.atkEnhance, 100);
-        SetItem(itemKind.criticalEnhance, 100);
-        SetItem(itemKind.expPercentEnhance, 100);
-        SetItem(itemKind.hpEnhance, 100);
-        SetItem(itemKind.sheildEnhance, 100);
-        SetItem(itemKind.speedEnhace, 100);
-        SetItem(itemKind.atkSpeedEnhance, 100);
+        for (int i = 0; i < enhanceInfo.Length; i++)
+        {
+            enhanceInfo[i] = 1;
+        }
+
+        SetItem(itemKind.bitamin10, 100);
+        SetItem(itemKind.bitamin100, 100);
+      
     }
 
 

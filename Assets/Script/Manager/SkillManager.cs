@@ -52,10 +52,10 @@ public class SkillManager : MonoBehaviour
 
     void SetSkill()
     {
-        skillList = new skillStruct[this.GetComponent<DatabaseManager>().GetLineSize() - 2];
+        skillList = new skillStruct[this.GetComponent<DatabaseManager>().Skill_DB.GetLineSize() - 2];
         for (int i=0; i< skillList.Length; i++)
         {
-            List<string> skillData = this.GetComponent<DatabaseManager>().GetRowData(i+2);
+            List<string> skillData = this.GetComponent<DatabaseManager>().Skill_DB.GetRowData(i+2);
             skillList[i].skillIndex = skillData[0];
             skillList[i].skillCode = skillData[1];
             skillList[i].skillName = skillData[2];

@@ -1,8 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class DatabaseManager : MonoBehaviour
+{
+    public DataBase Skill_DB;
+    public DataBase Edu_DB;
+}
+
+[Serializable]
+public class DataBase
 {
     public TextAsset txt;
     string[,] sentence;
@@ -15,7 +23,7 @@ public class DatabaseManager : MonoBehaviour
         lineSize = line.Length;
         rowSize = line[0].Split('\t').Length;
         sentence = new string[lineSize, rowSize];
-        
+
         for (int i = 0; i < lineSize; i++)
         {
             string[] row = line[i].Split('\t');
@@ -28,7 +36,7 @@ public class DatabaseManager : MonoBehaviour
         int cKey = 0;
         int rKey = 0;
 
-        for(int i=0; i<lineSize; i++)
+        for (int i = 0; i < lineSize; i++)
         {
             if (sentence[i, 0] == columeKey) cKey = i;
 
@@ -50,10 +58,10 @@ public class DatabaseManager : MonoBehaviour
         rowSize = line[0].Split('\t').Length;
         sentence = new string[lineSize, rowSize];
 
-   
+
         string[] row = line[columeInt].Split('\t');
 
-        for(int i=0; i<row.Length; i++)
+        for (int i = 0; i < row.Length; i++)
         {
             tempDataList.Add(row[i]);
         }

@@ -7,12 +7,20 @@ public class Etheleth : MonoBehaviour
 {
     [Header("패널 전체")]
     public Transform grind_pannel;
+    
     [Header("Etc ... ...")]
     public Money money;
+    public Sprite bitamin_false;
+    public Sprite bitamin_true;
+    public SpeechBubble speechBubble;
 
-    int[] enhance_item_num;
-    int[] myitem_num;
+    int[] enhance_bitamin10;
+    int[] enhance_bitamin100;
+    int bitamin10_num;
+    int bitamin100_num;
     int[] enhance_money;
+
+    bool isBitamin10;
 
     private void Start()
     {
@@ -42,47 +50,52 @@ public class Etheleth : MonoBehaviour
         }
         return EnhanceKind.Null;
     }
-    itemKind ItemKind_Num(int index)
+
+    int Enhance_Percent(int index)
     {
-        switch (index)
-        {
-            case 0:
-                return itemKind.atkEnhance;
-            case 1:
-                return itemKind.hpEnhance;
-            case 2:
-                return itemKind.sheildEnhance;
-            case 3:
-                return itemKind.speedEnhace;
-            case 4:
-                return itemKind.atkSpeedEnhance;
-            case 5:
-                return itemKind.criticalEnhance;
-            case 6:
-                return itemKind.expPercentEnhance;
-            case 7:
-                return itemKind.albaMoneyEnhace;
-        }
-        return itemKind.Null;
+        int enhance_num = GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index));
+
+        int total_bitamin = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(enhance_num)[3]);
+        int base_bitamin = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(enhance_num)[4]);
+        int item_bitamin = enhance_bitamin10[index] * 10 + enhance_bitamin100[index] * 100;
+
+        return (int)(((float)(base_bitamin + item_bitamin) / total_bitamin) * 100);
+    }
+
+    public void OnClcikBitamin_True(int index)
+    {
+        this.isBitamin10 = true;
+
+        grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin10").GetComponent<Image>().sprite = bitamin_true;
+        grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin100").GetComponent<Image>().sprite = bitamin_false;
+    }
+
+    public void OnClcikBitamin_False(int index)
+    {
+        this.isBitamin10 = false;
+
+        grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin10").GetComponent<Image>().sprite = bitamin_false;
+        grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin100").GetComponent<Image>().sprite = bitamin_true;
     }
 
     public void InitialSet()
     {
         //초기화
-        enhance_item_num = new int[grind_pannel.childCount];
-        myitem_num = new int[grind_pannel.childCount];
+        enhance_bitamin10 = new int[grind_pannel.childCount];
+        enhance_bitamin100 = new int[grind_pannel.childCount];
         enhance_money = new int[grind_pannel.childCount];
 
         //내 아이템 개수 정보 입력
-        for (int i = 0; i < grind_pannel.childCount; i++)
-        {
-            myitem_num[i] = GameManager.instance.userInfo.GetItem(ItemKind_Num(i));
-        }
+        bitamin10_num = GameManager.instance.userInfo.GetItem(itemKind.bitamin10);
+        bitamin100_num = GameManager.instance.userInfo.GetItem(itemKind.bitamin100);
+      
 
         //돈 정보 입력
         for (int i = 0; i < grind_pannel.childCount; i++)
         {
             enhance_money[i] = GameManager.instance.EnhanceMoney(EnhanceKind_Num(i));
+
+            OnClcikBitamin_True(i);
         }
 
 
@@ -136,45 +149,86 @@ public class Etheleth : MonoBehaviour
                     break;
             }
 
-            int temp_percent = current_enhance / 10;
-            temp_percent = 100 - (temp_percent * 10);
-            grind_pannel.GetChild(i).Find("학습성공확률").Find("확률").GetComponent<Text>().text = temp_percent + "% +";
+            grind_pannel.GetChild(i).Find("학습성공확률").Find("확률").GetComponent<Text>().text = Enhance_Percent(i) + "% +";
             grind_pannel.GetChild(i).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = 0 + "%";
 
-            grind_pannel.GetChild(i).Find("Enhance_item_").Find("Num").GetComponent<Text>().text = "0";
+            grind_pannel.GetChild(i).Find("Bitamin").Find("Bitamin10").Find("Text").GetComponent<Text>().text = "0";
+            grind_pannel.GetChild(i).Find("Bitamin").Find("Bitamin100").Find("Text").GetComponent<Text>().text = "0";
 
             string temp_money_string = string.Format("{0:#,###}", (int)enhance_money[0]);
             grind_pannel.GetChild(i).Find("단련버튼").Find("Money").GetComponent<Text>().text = temp_money_string;
         }
-      
     }
 
-    public void Right_enhance_item(int index)
+    public void right_enhance_item(int index)
     {
-        //가지고있는 아이템 수가 더 적다면 리턴 
-        if (!(myitem_num[index] >= (enhance_item_num[index] + 1)))
-            return;
 
         // 강화확률 + 확률업이 100보다 크다면 리턴
-        int temp_percent = GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index)) / 10;
-        temp_percent = 100 - (temp_percent * 10);
-        if ((temp_percent + enhance_item_num[index] + 1) > 100)
+        if (Enhance_Percent(index) >= 100)
             return;
 
-        enhance_item_num[index]++;
-        grind_pannel.GetChild(index).Find("Enhance_item_").Find("Num").GetComponent<Text>().text = enhance_item_num[index].ToString();
-        grind_pannel.GetChild(index).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = enhance_item_num[index] + "%";
+        int enhance_num = GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index));
+        int total_bitamin = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(enhance_num)[3]);
+        int base_bitamin = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(enhance_num)[4]);
+
+        int percent = (int)(base_bitamin / (float)total_bitamin * 100);
+
+        if (isBitamin10)
+        {
+            //가지고있는 아이템 수가 더 적다면 리턴 
+            if (enhance_bitamin10[index] + 1 > bitamin10_num)
+                return;
+
+            enhance_bitamin10[index]++;
+
+            grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin10").Find("Text").GetComponent<Text>().text = enhance_bitamin10[index].ToString();
+            grind_pannel.GetChild(index).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = Enhance_Percent(index) - percent + "%";
+        }
+        else
+        {
+            //가지고있는 아이템 수가 더 적다면 리턴 
+            if (enhance_bitamin100[index] + 1 > bitamin100_num)
+                return;
+
+            enhance_bitamin100[index]++;
+
+            grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin100").Find("Text").GetComponent<Text>().text = enhance_bitamin100[index].ToString();
+            grind_pannel.GetChild(index).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = Enhance_Percent(index) - percent + "%";
+        }
     }
 
     public void Left_enhance_item(int index)
     {
-        // 현재 강화아이템 적용 수가 1보다 작다면 리턴
-        if (enhance_item_num[index] < 1)
-            return;
+        int enhance_num = GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index));
+        int total_bitamin = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(enhance_num)[3]);
+        int base_bitamin = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(enhance_num)[4]);
 
-        enhance_item_num[index]--;
-        grind_pannel.GetChild(index).Find("Enhance_item_").Find("Num").GetComponent<Text>().text = enhance_item_num[index].ToString();
-        grind_pannel.GetChild(index).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = enhance_item_num[index] + "%";
+        int percent = (int)(base_bitamin / (float)total_bitamin * 100);
+
+        if (isBitamin10)
+        {
+            // 현재 강화아이템 적용 수가 1보다 작다면 리턴
+            if (enhance_bitamin10[index] < 1)
+                return;
+
+            enhance_bitamin10[index]--;
+
+
+            grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin10").Find("Text").GetComponent<Text>().text = enhance_bitamin10[index].ToString();
+            grind_pannel.GetChild(index).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = Enhance_Percent(index) - percent + "%";
+
+        }
+        else
+        {
+            // 현재 강화아이템 적용 수가 1보다 작다면 리턴
+            if (enhance_bitamin100[index] < 1)
+                return;
+
+            enhance_bitamin100[index]--;
+
+            grind_pannel.GetChild(index).Find("Bitamin").Find("Bitamin100").Find("Text").GetComponent<Text>().text = enhance_bitamin100[index].ToString();
+            grind_pannel.GetChild(index).Find("학습성공확률").Find("확률업").GetComponent<Text>().text = Enhance_Percent(index) - percent + "%";
+        }
     }
 
     public void OnClick_Enhance(int index)
@@ -189,11 +243,11 @@ public class Etheleth : MonoBehaviour
         money.PlusMoney(-enhance_money[index]);
 
         //사용한 아이템 차감
-        GameManager.instance.userInfo.SetItem(ItemKind_Num(index), GameManager.instance.userInfo.GetItem(ItemKind_Num(index)) - enhance_item_num[index]);
+        GameManager.instance.userInfo.SetItem(itemKind.bitamin10 , GameManager.instance.userInfo.GetItem(itemKind.bitamin10) - enhance_bitamin10[index]);
+        GameManager.instance.userInfo.SetItem(itemKind.bitamin100, GameManager.instance.userInfo.GetItem(itemKind.bitamin100) - enhance_bitamin100[index]);
 
         // 강화확률 수치 
-        int temp_percent = GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index)) / 10;
-        temp_percent = 100 - (temp_percent * 10) + enhance_item_num[index];
+        int temp_percent = Enhance_Percent(index);
 
         int random = Random.RandomRange(1, 101);
         if(temp_percent >= random)
@@ -207,6 +261,16 @@ public class Etheleth : MonoBehaviour
         else
         {
             Debug.Log("강화실패");
+            int current_enhance = GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index));
+            int down_percent = int.Parse(GameManager.instance.databaseManager.Edu_DB.GetRowData(current_enhance)[10].Split('%')[0]);
+
+            int random_percent = Random.RandomRange(0, 100);
+            if (down_percent < random_percent)
+            {
+                GameManager.instance.userInfo.SetEnhance(EnhanceKind_Num(index), GameManager.instance.userInfo.GetEnhance(EnhanceKind_Num(index)) - 1);
+                speechBubble.SpeechInput("학습 단계가\n하락했어 ...");
+                InitialSet();
+            }
         }
 
 

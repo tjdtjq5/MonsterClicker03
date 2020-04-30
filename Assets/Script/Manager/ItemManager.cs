@@ -31,12 +31,6 @@ public class ItemManager : MonoBehaviour
 public enum itemKind
 {
     Null,
-    atkEnhance,
-    hpEnhance,
-    speedEnhace,
-    sheildEnhance,
-    criticalEnhance,
-    atkSpeedEnhance,
-    expPercentEnhance,
-    albaMoneyEnhace
+    bitamin10,
+    bitamin100
 }
