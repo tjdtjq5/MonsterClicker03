@@ -79,6 +79,22 @@ public class ScriptManager : MonoBehaviour
                             scripts.Add("데니스 킴/대결입니다! 자 Ready~!");
                             scripts.Add("데니스 킴/Start!");
                             break;
+                        case 5:
+                            scripts.Add("데니스 킴/Hello, my student!");
+                            scripts.Add("연희/선생님 안녕하세요!");
+                            scripts.Add("데니스 킴/Oh~! 이 펫은?");
+                            scripts.Add("데니스 킴/연희의 new 펫인가요?");
+                            scripts.Add("연희/네 선생님! 토리라고 해요!");
+                            scripts.Add("데니스 킴/So Cute~!");
+                            scripts.Add("데니스 킴/우리 CoBongEe와 친하게 지내 보렴, ToRi~");
+                            scripts.Add("데니스 킴/한번 쓰다듬어 볼까요?");
+                            scripts.Add("토리/(앙!)");
+                            scripts.Add("데니스 킴/Ouch! 지금 저를 문거에요?");
+                            scripts.Add("데니스 킴/안 되겠어요, 버릇을 고쳐야 겠어요!");
+                            scripts.Add("연희/네???");
+                            scripts.Add("데니스 킴/대결입니다! 자 Ready~!");
+                            scripts.Add("데니스 킴/Start!");
+                            break;
 
                     }
                     break;
@@ -146,6 +162,21 @@ public class ScriptManager : MonoBehaviour
                             }
                             break;
                         case 4:
+                            if (isWin)
+                            {
+                                scripts.Add("데니스 킴/Oh no~!");
+                                scripts.Add("데니스 킴/토리가 생각보다 Strong 하군요!");
+                                scripts.Add("데니스 킴/좋아요! Forgive 해주겠어요.");
+                                scripts.Add("연희/죄송합니다 선생님~");
+                                scripts.Add("연희/이리와 토리!");
+                            }
+                            else
+                            {
+                                scripts.Add("데니스 킴/Wonderful 코봉이~ Wonderful!");
+                                scripts.Add("연희/... ...");
+                            }
+                            break;
+                        case 5:
                             if (isWin)
                             {
                                 scripts.Add("데니스 킴/Oh no~!");

@@ -18,7 +18,12 @@ public class ItemBagManager : MonoBehaviour
     public float sensibility;
 
     [Header("Eqip_btn")]
-    public GameObject eqip_btn;
+    public GameObject[] eqip_btn;
+
+    [Header("Etc...")]
+    public Transform pannel;
+    public GameObject click_image;
+
 
     public void OnClick_itembag()
     {
@@ -39,7 +44,6 @@ public class ItemBagManager : MonoBehaviour
             first_touch_flag = true;
             first_touch_pos = Input.mousePosition;
         }
-       
     }
 
     public void Screen_Touch_Exit()
@@ -55,6 +59,41 @@ public class ItemBagManager : MonoBehaviour
         touch_on_flag = false;
     }
 
+    public void OnClickExit()
+    {
+        cam_main.SetActive(true);
+        cam_ui.SetActive(true);
+        Item_obj.SetActive(false);
+    }
+
+    public void OnClick_EqipBtn(int index)
+    {
+        if (!eqipBtn_flag)
+        {
+            for (int i = 0; i < eqip_btn.Length; i++)
+            {
+                if(i == index)
+                {
+                    eqip_btn[i].transform.DOScale(new Vector3(1, 1, 1), 0.3f);
+                }
+                else
+                {
+                    eqip_btn[i].transform.DOScale(new Vector3(.8f, .8f, .8f), 0.3f);
+                }
+            }
+            StartCoroutine(OnClick_EqipBtn_Coroutine());
+        }
+    }
+    bool eqipBtn_flag;
+    IEnumerator OnClick_EqipBtn_Coroutine()
+    {
+        eqipBtn_flag = true;
+        yield return new WaitForSeconds(0.3f);
+        eqipBtn_flag = false;
+    }
+
+    //아이템 아이콘 클릭 
+
     public void Update()
     {
         if (first_touch_flag)
@@ -67,38 +106,44 @@ public class ItemBagManager : MonoBehaviour
 
             theCam_rotation.localRotation = Quaternion.Euler(theCam_rotation.localRotation.x + temp_y * sensibility, theCam_rotation.localRotation.y + temp_x * sensibility, theCam_rotation.localRotation.z);
         }
-    }
 
-    public void OnClickExit()
-    {
-        cam_main.SetActive(true);
-        cam_ui.SetActive(true);
-        Item_obj.SetActive(false);
-    }
-
-    bool eqip_btn_flag;
-    public void Eqip_right()
-    {
-        if (!eqip_btn_flag)
+        if (Input.GetMouseButtonDown(0))
         {
-            eqip_btn_flag = true;
-            StartCoroutine(Eqip_Coroutine("right"));
-        }
-    }
-    public void Eqip_left()
-    {
-        if (!eqip_btn_flag)
-        {
-            eqip_btn_flag = true;
-            StartCoroutine(Eqip_Coroutine("left"));
+            Vector2 mousePos = Input.mousePosition;
+            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 10f);
+            if (hit)
+            {
+                string name = hit.transform.gameObject.name;
+                if (name.Contains("아이템_칸"))
+                {
+                    string temp_num = name.Split('(')[1];
+                    int num = int.Parse(temp_num.Split(')')[0]);
+                    Set_ItemClick(num);
+                }
+            }
         }
     }
 
-    IEnumerator Eqip_Coroutine(string ani)
+    void Set_ItemClick(int num)
     {
-        eqip_btn.GetComponent<Animator>().SetBool(ani, true);
-        yield return new WaitForSeconds(.7f);
-        eqip_btn.GetComponent<Animator>().SetBool(ani, false);
-        eqip_btn_flag = false;
+        if (click_flag)
+            return;
+
+        click_image.SetActive(false);
+        click_image.SetActive(true);
+        ClickCoroutine = Click_Image_Coroutine(num);
+        StartCoroutine(ClickCoroutine);
+    }
+    IEnumerator ClickCoroutine;
+
+    bool click_flag;
+    IEnumerator Click_Image_Coroutine(int num)
+    {
+        click_flag = true;
+        click_image.transform.position = pannel.GetChild(num).transform.position;
+        click_image.GetComponent<Animator>().SetBool("click", true);
+        yield return new WaitForSeconds(0.25f);
+        click_image.GetComponent<Animator>().SetBool("click", false);
+        click_flag = false;
     }
 }

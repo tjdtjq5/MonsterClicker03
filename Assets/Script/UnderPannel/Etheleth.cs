@@ -86,8 +86,8 @@ public class Etheleth : MonoBehaviour
         enhance_money = new int[grind_pannel.childCount];
 
         //내 아이템 개수 정보 입력
-        bitamin10_num = GameManager.instance.userInfo.GetItem(itemKind.bitamin10);
-        bitamin100_num = GameManager.instance.userInfo.GetItem(itemKind.bitamin100);
+        bitamin10_num = GameManager.instance.userInfo.GetItem(Bitamin_kind.bitamin10);
+        bitamin100_num = GameManager.instance.userInfo.GetItem(Bitamin_kind.bitamin100);
       
 
         //돈 정보 입력
@@ -243,8 +243,8 @@ public class Etheleth : MonoBehaviour
         money.PlusMoney(-enhance_money[index]);
 
         //사용한 아이템 차감
-        GameManager.instance.userInfo.SetItem(itemKind.bitamin10 , GameManager.instance.userInfo.GetItem(itemKind.bitamin10) - enhance_bitamin10[index]);
-        GameManager.instance.userInfo.SetItem(itemKind.bitamin100, GameManager.instance.userInfo.GetItem(itemKind.bitamin100) - enhance_bitamin100[index]);
+        GameManager.instance.userInfo.SetItem(Bitamin_kind.bitamin10 , GameManager.instance.userInfo.GetItem(Bitamin_kind.bitamin10) - enhance_bitamin10[index]);
+        GameManager.instance.userInfo.SetItem(Bitamin_kind.bitamin100, GameManager.instance.userInfo.GetItem(Bitamin_kind.bitamin100) - enhance_bitamin100[index]);
 
         // 강화확률 수치 
         int temp_percent = Enhance_Percent(index);

@@ -359,34 +359,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dabd3c58b27892442a582099a8b656f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemList:
-  - item: 0
-    itemName: "\uACF5\uACA9\uB825\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: 113c223cfb13b79469bb7a9da90f4f3c, type: 3}
-  - item: 1
-    itemName: "\uCCB4\uB825\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: a78bc671161d8be42a3a2dc74b52c5c4, type: 3}
-  - item: 2
-    itemName: "\uC18D\uB825\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: 6e6f88ae0c0324d48a12f349c1173b10, type: 3}
-  - item: 3
-    itemName: "\uBC29\uC5B4\uB825\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: 2552978f92ac68a43b3810845bf5586b, type: 3}
-  - item: 4
-    itemName: "\uD06C\uB9AC\uD2F0\uCEEC\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: 87c2f5a5acf42334d86f20b223c2c9a9, type: 3}
-  - item: 6
-    itemName: "\uAC15\uD654\uD655\uB960\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: 113c223cfb13b79469bb7a9da90f4f3c, type: 3}
-  - item: 7
-    itemName: "\uACBD\uD5D8\uCE58\uC0C1\uC2B9\uB7C9\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: 2552978f92ac68a43b3810845bf5586b, type: 3}
-  - item: 8
-    itemName: "\uC54C\uBC14\uB3C8\uC0C1\uC2B9\uB7C9\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: a78bc671161d8be42a3a2dc74b52c5c4, type: 3}
-  - item: 5
-    itemName: "\uACF5\uACA9\uC18D\uB3C4\uAC15\uD654\uC81C"
-    itemImage: {fileID: 21300000, guid: a78bc671161d8be42a3a2dc74b52c5c4, type: 3}
+  bitamin_list:
+  - bitamin: 0
+    bitamin_Name: 
+    bitamin_image: {fileID: 0}
+  - bitamin: 1
+    bitamin_Name: "\uBE44\uD0C0\uBBFC10"
+    bitamin_image: {fileID: 0}
+  - bitamin: 2
+    bitamin_Name: "\uBE44\uD0C0\uBBFC100"
+    bitamin_image: {fileID: 0}
 --- !u!114 &749467063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,11 +439,63 @@ MonoBehaviour:
     level: 1
     atk: 16
     hp: 160
-    sheild: 8
+    sheild: 0
     critical: 1
     haveSkill_01: Skill002
     haveSkill_02: Skill027
     haveSkill_03: Skill001
+    haveSkill_04: Skill001
+  - stageCode: {x: 1, y: 2}
+    enemySprite: {fileID: 21300000, guid: 69a577fbea441f744ac42a1516d7e79c, type: 3}
+    enemyName: "\uB77C\uB77C"
+    enemyType: 0
+    level: 2
+    atk: 20
+    hp: 200
+    sheild: 1
+    critical: 1
+    haveSkill_01: Skill077
+    haveSkill_02: Skill082
+    haveSkill_03: Skill001
+    haveSkill_04: Skill001
+  - stageCode: {x: 1, y: 3}
+    enemySprite: {fileID: 21300000, guid: 2a4fc20b2bfbee34e8ff45456ba45c7d, type: 3}
+    enemyName: "\uBAA8\uB9AC"
+    enemyType: 0
+    level: 4
+    atk: 40
+    hp: 400
+    sheild: 2
+    critical: 1
+    haveSkill_01: Skill127
+    haveSkill_02: Skill132
+    haveSkill_03: Skill001
+    haveSkill_04: Skill001
+  - stageCode: {x: 1, y: 4}
+    enemySprite: {fileID: 21300000, guid: da8b77b174d31d145a8264180975266e, type: 3}
+    enemyName: "\uB9C8\uC6B0\uB728"
+    enemyType: 4
+    level: 7
+    atk: 70
+    hp: 700
+    sheild: 3
+    critical: 1
+    haveSkill_01: Skill027
+    haveSkill_02: Skill052
+    haveSkill_03: Skill001
+    haveSkill_04: Skill001
+  - stageCode: {x: 1, y: 5}
+    enemySprite: {fileID: 21300000, guid: 5e9787a1b63db65488029fbf798b34b7, type: 3}
+    enemyName: "\uBCA0\uC5B4\uBB38"
+    enemyType: 5
+    level: 10
+    atk: 100
+    hp: 1000
+    sheild: 5
+    critical: 1
+    haveSkill_01: Skill052
+    haveSkill_02: Skill057
+    haveSkill_03: Skill012
     haveSkill_04: Skill001
 --- !u!114 &749467066
 MonoBehaviour:

@@ -6,31 +6,46 @@ using System;
 public class ItemManager : MonoBehaviour
 {
     [Serializable]
-    public struct itemStruct
+    public struct Bitamin_Struct
     {
-        public itemKind item;
-        public string itemName;
-        public Sprite itemImage;
+        public Bitamin_kind bitamin;
+        public string bitamin_Name;
+        public Sprite bitamin_image;
     }
 
-    public itemStruct[] itemList;
+    public Bitamin_Struct[] bitamin_list;
 
-    public itemStruct WhatItem(itemKind item)
+    public Bitamin_Struct WhatBitamin(Bitamin_kind bitamin)
     {
-        for (int i = 0; i < itemList.Length; i++)
+        for (int i = 0; i < bitamin_list.Length; i++)
         {
-            if (itemList[i].item == item)
+            if (bitamin_list[i].bitamin == bitamin)
             {
-                return itemList[i];
+                return bitamin_list[i];
             }
         }
-        return itemList[0];
+        return bitamin_list[0];
     }
 
 }
-public enum itemKind
+public enum Bitamin_kind
 {
     Null,
     bitamin10,
     bitamin100
+}
+
+public enum Eqip_kind
+{
+    Null
+}
+
+public enum Food_kind
+{
+    Null
+}
+
+public enum Skill_item_kind
+{
+    Null
 }

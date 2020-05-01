@@ -12317,6 +12317,7 @@ MonoBehaviour:
   blackpannel: {fileID: 326279260}
   game_end_pannel: {fileID: 702305775}
   next_scene: {fileID: 2056997409}
+  enemy_sprite: {fileID: 304992720}
 --- !u!1 &1249008571
 GameObject:
   m_ObjectHideFlags: 0
@@ -12706,8 +12707,8 @@ RectTransform:
   - {fileID: 1484309027}
   - {fileID: 1020770438}
   - {fileID: 257045419}
-  - {fileID: 2058211940}
   - {fileID: 1995414446}
+  - {fileID: 2058211940}
   - {fileID: 93025212}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -20471,7 +20472,7 @@ RectTransform:
   - {fileID: 468103707}
   - {fileID: 1560413357}
   m_Father: {fileID: 1292842508}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

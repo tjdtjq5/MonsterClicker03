@@ -45,7 +45,10 @@ public class StroyCaracterSetting : MonoBehaviour
                         caracter_image.sprite = hojin[0];
                         break;
                     case 4:
-                     //   caracter_image.sprite = denis_kim[0];
+                        caracter_image.sprite = denis_kim[0];
+                        break;
+                    case 5:
+                        caracter_image.sprite = yeunggi[0];
                         break;
                 }
                 break;

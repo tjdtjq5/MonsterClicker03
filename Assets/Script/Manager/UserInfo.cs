@@ -28,7 +28,7 @@ public class UserInfo : MonoBehaviour
     int alba09;
     int alba10;
 
-    int[] itemInfo;
+    int[] bitamin_info;
 
     //스킬정보 
     public List<string> skillHaveInfo;
@@ -41,7 +41,7 @@ public class UserInfo : MonoBehaviour
         skillHaveInfo = new List<string>();
         skillEqipInfo = new string[4];
 
-        itemInfo = new int[this.GetComponent<ItemManager>().itemList.Length];
+        bitamin_info = new int[this.GetComponent<ItemManager>().bitamin_list.Length];
         enhanceInfo = new int[this.GetComponent<EnhanceManager>().enhanceList.Length];
 
         userNickname = "유저이름";
@@ -57,8 +57,8 @@ public class UserInfo : MonoBehaviour
             enhanceInfo[i] = 1;
         }
 
-        SetItem(itemKind.bitamin10, 100);
-        SetItem(itemKind.bitamin100, 100);
+        SetItem(Bitamin_kind.bitamin10, 100);
+        SetItem(Bitamin_kind.bitamin100, 100);
       
     }
 
@@ -251,35 +251,35 @@ public class UserInfo : MonoBehaviour
 
     // 아이템정보 
 
-    public void SetItem(itemKind item , int num)
+    public void SetItem(Bitamin_kind bitamin , int num)
     {
-        if (itemInfo.Length != GameManager.instance.itemManager.itemList.Length)
+        if (bitamin_info.Length != GameManager.instance.itemManager.bitamin_list.Length)
         {
             Debug.Log("아이템 정보가 맞지 않습니다.");
         }
 
-        for (int i=0; i<itemInfo.Length; i++)
+        for (int i=0; i< bitamin_info.Length; i++)
         {
-            if(GameManager.instance.itemManager.itemList[i].item == item)
+            if(GameManager.instance.itemManager.bitamin_list[i].bitamin == bitamin)
             {
-                itemInfo[i] = num;
+                bitamin_info[i] = num;
                 return;
             }
         }
     }
 
-    public int GetItem(itemKind item)
+    public int GetItem(Bitamin_kind bitamin)
     {
-        if (itemInfo.Length != GameManager.instance.itemManager.itemList.Length)
+        if (bitamin_info.Length != GameManager.instance.itemManager.bitamin_list.Length)
         {
             Debug.Log("아이템 정보가 맞지 않습니다.");
         }
 
-        for (int i = 0; i < itemInfo.Length; i++)
+        for (int i = 0; i < bitamin_info.Length; i++)
         {
-            if (GameManager.instance.itemManager.itemList[i].item == item)
+            if (GameManager.instance.itemManager.bitamin_list[i].bitamin == bitamin)
             {
-                return itemInfo[i];
+                return bitamin_info[i];
             }
         }
 

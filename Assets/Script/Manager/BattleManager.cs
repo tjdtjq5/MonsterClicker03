@@ -24,6 +24,9 @@ public class BattleManager : MonoBehaviour
     [Header("NextScene")]
     public NextScene next_scene;
 
+    [Header("enemy_")]
+    public SpriteRenderer enemy_sprite;
+
     int round;
 
     int player_hp;
@@ -45,6 +48,7 @@ public class BattleManager : MonoBehaviour
         player_hp = GameManager.instance.GetHp(GameManager.instance.userInfo.GetLevel(), GameManager.instance.userInfo.GetEnhance(EnhanceKind.hpEnhance));
         enemy_hp = enemyInfo.hp;
         screenManager.InitialScreen(player_hp, enemy_hp);
+        enemy_sprite.sprite = enemyInfo.enemySprite;
     }
 
     void PlayerGetDamage(int damage)
