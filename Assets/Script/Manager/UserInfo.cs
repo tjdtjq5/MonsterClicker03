@@ -34,6 +34,12 @@ public class UserInfo : MonoBehaviour
     public List<string> skillHaveInfo;
     public string[] skillEqipInfo;
 
+    //장비정보 
+    public List<User_Eqip_Info> player_eqip_list = new List<User_Eqip_Info>();
+
+    //가방정보 
+    [HideInInspector]
+    public int bag_num = 20;
 
     // 초기 설정
     void Start()
@@ -59,7 +65,12 @@ public class UserInfo : MonoBehaviour
 
         SetItem(Bitamin_kind.bitamin10, 100);
         SetItem(Bitamin_kind.bitamin100, 100);
-      
+
+
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem,0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem, 0));
     }
 
 
@@ -328,5 +339,67 @@ public class UserInfo : MonoBehaviour
             return "null";
 
         return skillEqipInfo[index];
+    }
+
+    /// <summary>
+    ///  
+    /// </summary>
+    /// <param name="eqip"></param>
+    /// 
+
+    public void Get_Eqipitem(Eqip_kind eqip, int enhance)
+    {
+        player_eqip_list.Add(new User_Eqip_Info(eqip, enhance));
+    }
+
+    public User_Eqip_Info Get_Eqiping_Item(bool eqip_kind)
+    {
+        for (int i = 0; i < player_eqip_list.Count; i++)
+        {
+            if (GameManager.instance.itemManager.WhatEqip(player_eqip_list[i].eqip).eqip_kind == eqip_kind)
+            {
+                if (player_eqip_list[i].isEqip == true)
+                {
+                    return player_eqip_list[i];
+                }
+            }
+        }
+
+        return null;
+    }
+
+    public void Eqipment(User_Eqip_Info eqip)
+    {
+        for (int i = 0; i < player_eqip_list.Count; i++)
+        {
+            if (GameManager.instance.itemManager.WhatEqip(eqip.eqip).eqip_kind ==
+                GameManager.instance.itemManager.WhatEqip(player_eqip_list[i].eqip).eqip_kind)
+            {
+                player_eqip_list[i].isEqip = false;
+            }
+        }
+
+        for (int i = 0; i < player_eqip_list.Count; i++)
+        {
+            if (player_eqip_list[i] == eqip)
+            {
+                player_eqip_list[i].isEqip = true;
+                return;
+            }
+        }
+    }
+}
+
+
+public class User_Eqip_Info
+{
+    public Eqip_kind eqip;
+    public int enhance;
+    public bool isEqip;
+
+    public User_Eqip_Info(Eqip_kind eqip, int enhance)
+    {
+        this.eqip = eqip;
+        this.enhance = enhance;
     }
 }

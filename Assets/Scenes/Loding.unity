@@ -369,6 +369,13 @@ MonoBehaviour:
   - bitamin: 2
     bitamin_Name: "\uBE44\uD0C0\uBBFC100"
     bitamin_image: {fileID: 0}
+  eqip_list:
+  - eqip: 0
+    eqip_Name: 
+    eqip_image: {fileID: 0}
+  - eqip: 1
+    eqip_Name: Testitem
+    eqip_image: {fileID: 21300000, guid: 2552978f92ac68a43b3810845bf5586b, type: 3}
 --- !u!114 &749467063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -965,7 +972,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
