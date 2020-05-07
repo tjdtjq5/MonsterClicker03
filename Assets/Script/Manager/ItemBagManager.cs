@@ -166,9 +166,9 @@ public class ItemBagManager : MonoBehaviour
         player_info.Find("atk").GetChild(0).GetComponent<Text>().text = GameManager.instance.GetAtk(GameManager.instance.userInfo.GetLevel(), GameManager.instance.userInfo.GetEnhance(EnhanceKind.atkEnhance)).ToString();
         player_info.Find("shield").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetSheild(); 
         player_info.Find("hp").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetHp(GameManager.instance.userInfo.GetLevel(), GameManager.instance.userInfo.GetEnhance(EnhanceKind.hpEnhance));
-        player_info.Find("critical").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetCritical();
-        player_info.Find("atkspeed").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetAtkSpeed();
-        player_info.Find("speed").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetSpeed();
+        player_info.Find("critical").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetCritical() + "%";
+        player_info.Find("atkspeed").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetAtkSpeed() + "S";
+        player_info.Find("speed").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetSpeed() + "S";
     }
 
     [Header("잠금 이미지")]
@@ -303,11 +303,14 @@ public class ItemBagManager : MonoBehaviour
 
         eqip_info.transform.Find("item_name").GetComponent<Text>().text = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_Name;
         eqip_info.transform.Find("item_image").GetChild(0).GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
+        eqip_info.transform.Find("item_info").GetChild(1).GetComponent<Text>().text =
+             select_eqip_item.atk + "\n" + select_eqip_item.critical + "%\n" + select_eqip_item.shield + "\n" + select_eqip_item.hp + "\n" + select_eqip_item.atkspeed + "S\n" + select_eqip_item.speed + "S";
     }
 
     public void Eqipment()
     {
         GameManager.instance.userInfo.Eqipment(select_eqip_item);
         OnClickEqip();
+        Set_Player_Info(); 
     }
 }

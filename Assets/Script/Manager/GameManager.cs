@@ -110,7 +110,16 @@ public class GameManager : MonoBehaviour
         }
 
         int carrotAtk = userInfo.GetCarrotLevel();
-        tempAtk = (tempAtk + carrotAtk);
+
+        // 장착중인 장비 더하기
+        int eqipAtk_false = 0;
+        int eqipAtk_true = 0;
+        if (userInfo.Get_Eqiping_Item(false) != null)
+            eqipAtk_false = userInfo.Get_Eqiping_Item(false).atk;
+        if (userInfo.Get_Eqiping_Item(true) != null)
+            eqipAtk_true = userInfo.Get_Eqiping_Item(true).atk;
+
+        tempAtk = (tempAtk + carrotAtk) + eqipAtk_false + eqipAtk_true;
         return tempAtk;
     }
 
@@ -122,7 +131,16 @@ public class GameManager : MonoBehaviour
         {
             tempHp += (int)(enhanceManager.WhatEnhace(EnhanceKind.hpEnhance).percent / 100 * tempHp);
         }
-        return tempHp;
+
+        // 장착중인 장비 더하기
+        int eqipHp_false = 0;
+        int eqipHp_true = 0;
+        if (userInfo.Get_Eqiping_Item(false) != null)
+            eqipHp_false = userInfo.Get_Eqiping_Item(false).hp;
+        if (userInfo.Get_Eqiping_Item(true) != null)
+            eqipHp_true = userInfo.Get_Eqiping_Item(true).hp;
+
+        return tempHp + eqipHp_false + eqipHp_true;
     }
 
     public float GetSpeed()
@@ -130,7 +148,17 @@ public class GameManager : MonoBehaviour
         float tempSpeed = initialSpeed;
 
         tempSpeed = tempSpeed + (userInfo.GetEnhance(EnhanceKind.speedEnhace) * enhanceManager.WhatEnhace(EnhanceKind.speedEnhace).percent);
-        return tempSpeed;
+
+        // 장착중인 장비 더하기
+        float eqipSpeed_false = 0;
+        float eqipSpeed_true = 0;
+        if (userInfo.Get_Eqiping_Item(false) != null)
+            eqipSpeed_false = userInfo.Get_Eqiping_Item(false).speed;
+        if (userInfo.Get_Eqiping_Item(true) != null)
+            eqipSpeed_true = userInfo.Get_Eqiping_Item(true).speed;
+
+
+        return tempSpeed + eqipSpeed_false + eqipSpeed_true;
     }
 
     public float GetSheild()
@@ -138,7 +166,16 @@ public class GameManager : MonoBehaviour
         float tempSheild = initialSheild;
 
         tempSheild = tempSheild + (userInfo.GetEnhance(EnhanceKind.sheildEnhance) * enhanceManager.WhatEnhace(EnhanceKind.sheildEnhance).percent);
-        return tempSheild;
+
+        // 장착중인 장비 더하기
+        float eqipSheild_false = 0;
+        float eqipSheild_true = 0;
+        if (userInfo.Get_Eqiping_Item(false) != null)
+            eqipSheild_false = userInfo.Get_Eqiping_Item(false).shield;
+        if (userInfo.Get_Eqiping_Item(true) != null)
+            eqipSheild_true = userInfo.Get_Eqiping_Item(true).shield;
+
+        return tempSheild + eqipSheild_false + eqipSheild_true;
     }
 
     public float GetCritical()
@@ -146,7 +183,16 @@ public class GameManager : MonoBehaviour
         float tempCritical = initialCritical;
 
         tempCritical = tempCritical + (userInfo.GetEnhance(EnhanceKind.criticalEnhance) * enhanceManager.WhatEnhace(EnhanceKind.criticalEnhance).percent);
-        return tempCritical;
+
+        // 장착중인 장비 더하기
+        float eqipCritical_false = 0;
+        float eqipCritical_true = 0;
+        if (userInfo.Get_Eqiping_Item(false) != null)
+            eqipCritical_false = userInfo.Get_Eqiping_Item(false).critical;
+        if (userInfo.Get_Eqiping_Item(true) != null)
+            eqipCritical_true = userInfo.Get_Eqiping_Item(true).critical;
+
+        return tempCritical + eqipCritical_false + eqipCritical_true;
     }
 
     public float GetAtkSpeed()
@@ -154,7 +200,16 @@ public class GameManager : MonoBehaviour
         float tempAtkSpeed = initialAtkSpeed;
 
         tempAtkSpeed -= (userInfo.GetEnhance(EnhanceKind.atkSpeedEnhance) * enhanceManager.WhatEnhace(EnhanceKind.atkSpeedEnhance).percent);
-        return tempAtkSpeed;
+
+        // 장착중인 장비 더하기
+        float eqipAtkSpeed_false = 0;
+        float eqipAtkSpeed_true = 0;
+        if (userInfo.Get_Eqiping_Item(false) != null)
+            eqipAtkSpeed_false = userInfo.Get_Eqiping_Item(false).atkspeed;
+        if (userInfo.Get_Eqiping_Item(true) != null)
+            eqipAtkSpeed_true = userInfo.Get_Eqiping_Item(true).atkspeed;
+
+        return tempAtkSpeed + eqipAtkSpeed_false + eqipAtkSpeed_true;
     }
 
     public float GetExpPercent()
@@ -162,6 +217,9 @@ public class GameManager : MonoBehaviour
         float tempExp_percent = 0;
 
         tempExp_percent += (userInfo.GetEnhance(EnhanceKind.expPercentEnhance) * enhanceManager.WhatEnhace(EnhanceKind.expPercentEnhance).percent);
+
+
+
         return tempExp_percent;
     }
 

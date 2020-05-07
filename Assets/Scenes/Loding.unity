@@ -347,6 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   skillHaveInfo: []
   skillEqipInfo: []
+  bag_num: 20
 --- !u!114 &749467062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,9 +374,147 @@ MonoBehaviour:
   - eqip: 0
     eqip_Name: 
     eqip_image: {fileID: 0}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
   - eqip: 1
-    eqip_Name: Testitem
-    eqip_image: {fileID: 21300000, guid: 2552978f92ac68a43b3810845bf5586b, type: 3}
+    eqip_Name: "\uB048 \uB9AC\uBCF8"
+    eqip_image: {fileID: 21300000, guid: a78bc671161d8be42a3a2dc74b52c5c4, type: 3}
+    eqip_kind: 0
+    grade: Nomal
+    specialization: "\uC7AC\uB2A5 \uD2B9\uD654"
+    atk: 10
+    atk_width: 30
+    atk_generation_percent: 10
+    critical: 100
+    critical_width: 30
+    critical_generation_percent: 10
+    shield: 1
+    shield_width: 30
+    shield_generation_percent: 10
+    hp: 2
+    hp_width: 30
+    hp_generation_percent: 10
+    atkspeed: 0.1
+    atkspeed_width: 30
+    atkspeed_generation_percent: 100
+    speed: 0.1
+    speed_width: 30
+    speed_generation_percent: 100
+  - eqip: 2
+    eqip_Name: "\uC0AC\uD0D5 \uBA38\uB9AC\uB760"
+    eqip_image: {fileID: 21300000, guid: 5e9787a1b63db65488029fbf798b34b7, type: 3}
+    eqip_kind: 0
+    grade: Nomal
+    specialization: "\uBC29\uC5B4 \uD2B9\uD654"
+    atk: 10
+    atk_width: 30
+    atk_generation_percent: 10
+    critical: 100
+    critical_width: 30
+    critical_generation_percent: 100
+    shield: 1
+    shield_width: 30
+    shield_generation_percent: 10
+    hp: 2
+    hp_width: 30
+    hp_generation_percent: 100
+    atkspeed: 0.1
+    atkspeed_width: 30
+    atkspeed_generation_percent: 10
+    speed: 0.1
+    speed_width: 30
+    speed_generation_percent: 10
+  - eqip: 3
+    eqip_Name: "\uB098\uBB47\uC78E \uBE0C\uB85C\uCE58"
+    eqip_image: {fileID: 21300000, guid: 69a577fbea441f744ac42a1516d7e79c, type: 3}
+    eqip_kind: 0
+    grade: Nomal
+    specialization: "\uACF5\uACA9 \uD2B9\uD654"
+    atk: 10
+    atk_width: 30
+    atk_generation_percent: 100
+    critical: 1
+    critical_width: 30
+    critical_generation_percent: 100
+    shield: 2
+    shield_width: 30
+    shield_generation_percent: 10
+    hp: 100
+    hp_width: 30
+    hp_generation_percent: 10
+    atkspeed: 0.1
+    atkspeed_width: 30
+    atkspeed_generation_percent: 10
+    speed: 0.1
+    speed_width: 30
+    speed_generation_percent: 10
+  - eqip: 4
+    eqip_Name: "\uB098\uBE44 \uB9AC\uBCF8"
+    eqip_image: {fileID: 21300000, guid: 7f14309bc05fa264b94377c115faa1b6, type: 3}
+    eqip_kind: 0
+    grade: Rare
+    specialization: "\uC7AC\uB2A5\uD2B9\uD654"
+    atk: 20
+    atk_width: 30
+    atk_generation_percent: 10
+    critical: 1.5
+    critical_width: 30
+    critical_generation_percent: 10
+    shield: 4
+    shield_width: 30
+    shield_generation_percent: 10
+    hp: 200
+    hp_width: 30
+    hp_generation_percent: 10
+    atkspeed: 0.2
+    atkspeed_width: 30
+    atkspeed_generation_percent: 100
+    speed: 0.2
+    speed_width: 30
+    speed_generation_percent: 100
+  - eqip: 5
+    eqip_Name: "\uBB34\uC9C0\uAC1C \uBA38\uB9AC\uB760"
+    eqip_image: {fileID: 21300000, guid: 07103c52b3aaeca4da8a83361edd059f, type: 3}
+    eqip_kind: 0
+    grade: Rare
+    specialization: "\uBC29\uC5B4\uD2B9\uD654"
+    atk: 20
+    atk_width: 30
+    atk_generation_percent: 10
+    critical: 1.5
+    critical_width: 30
+    critical_generation_percent: 10
+    shield: 4
+    shield_width: 30
+    shield_generation_percent: 100
+    hp: 200
+    hp_width: 30
+    hp_generation_percent: 100
+    atkspeed: 0.2
+    atkspeed_width: 30
+    atkspeed_generation_percent: 10
+    speed: 0.2
+    speed_width: 30
+    speed_generation_percent: 10
 --- !u!114 &749467063
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -67,10 +67,10 @@ public class UserInfo : MonoBehaviour
         SetItem(Bitamin_kind.bitamin100, 100);
 
 
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem,0));
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem, 0));
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem, 0));
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.testitem, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.끈리본,0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.나뭇잎브로치, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.나비리본, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.무지개머리띠, 0));
     }
 
 
@@ -396,10 +396,77 @@ public class User_Eqip_Info
     public Eqip_kind eqip;
     public int enhance;
     public bool isEqip;
+    public int atk;
+    public float critical;
+    public float shield;
+    public int hp;
+    public float atkspeed;
+    public float speed;
 
     public User_Eqip_Info(Eqip_kind eqip, int enhance)
     {
         this.eqip = eqip;
         this.enhance = enhance;
+        
+        //공격력
+        int atk_rand = Random.RandomRange(0, 100);
+        if (GameManager.instance.itemManager.WhatEqip(eqip).atk_generation_percent > atk_rand)
+        {
+            int width = (int)GameManager.instance.itemManager.WhatEqip(eqip).atk_width;
+            float atk_width_rand = Random.RandomRange(-width, width) / (float)100;
+            float temp_atk = GameManager.instance.itemManager.WhatEqip(eqip).atk;
+            temp_atk += temp_atk * atk_width_rand;
+            atk = (int)temp_atk;
+        }
+        //크리티컬
+        int critical_rand = Random.RandomRange(0, 100);
+        if (GameManager.instance.itemManager.WhatEqip(eqip).critical_generation_percent > critical_rand)
+        {
+            int width = (int)GameManager.instance.itemManager.WhatEqip(eqip).critical_width;
+            float critical_width_rand = Random.RandomRange(-width, width) / (float)100;
+            float temp_critical = GameManager.instance.itemManager.WhatEqip(eqip).critical;
+            temp_critical += temp_critical * critical_width_rand;
+            critical = temp_critical;
+        }
+        //방어력
+        int shield_rand = Random.RandomRange(0, 100);
+        if (GameManager.instance.itemManager.WhatEqip(eqip).shield_generation_percent > shield_rand)
+        {
+            int width = (int)GameManager.instance.itemManager.WhatEqip(eqip).shield_width;
+            float shield_width_rand = Random.RandomRange(-width, width) / (float)100;
+            float temp_shield = GameManager.instance.itemManager.WhatEqip(eqip).shield;
+            temp_shield += temp_shield * shield_width_rand;
+            shield = temp_shield;
+        }
+        //체력
+        int hp_rand = Random.RandomRange(0, 100);
+        if (GameManager.instance.itemManager.WhatEqip(eqip).hp_generation_percent > hp_rand)
+        {
+            int width = (int)GameManager.instance.itemManager.WhatEqip(eqip).hp_width;
+            float hp_width_rand = Random.RandomRange(-width, width) / (float)100;
+            float temp_hp = GameManager.instance.itemManager.WhatEqip(eqip).hp;
+            temp_hp += temp_hp * hp_width_rand;
+            hp = (int)temp_hp;
+        }
+        //공격속도
+        int atkspeed_rand = Random.RandomRange(0, 100);
+        if (GameManager.instance.itemManager.WhatEqip(eqip).atkspeed_generation_percent > atkspeed_rand)
+        {
+            int width = (int)GameManager.instance.itemManager.WhatEqip(eqip).atkspeed_width;
+            float atkspeed_width_rand = Random.RandomRange(-width, width) / (float)100;
+            float temp_atkspeed = GameManager.instance.itemManager.WhatEqip(eqip).atkspeed;
+            temp_atkspeed += temp_atkspeed * atkspeed_width_rand;
+            atkspeed = -temp_atkspeed;
+        }
+        //속력
+        int speed_rand = Random.RandomRange(0, 100);
+        if (GameManager.instance.itemManager.WhatEqip(eqip).speed_generation_percent > speed_rand)
+        {
+            int width = (int)GameManager.instance.itemManager.WhatEqip(eqip).speed_width;
+            float speed_width_rand = Random.RandomRange(-width, width) / (float)100;
+            float temp_speed = GameManager.instance.itemManager.WhatEqip(eqip).speed;
+            temp_speed += temp_speed * speed_width_rand;
+            speed = -temp_speed;
+        }
     }
 }
