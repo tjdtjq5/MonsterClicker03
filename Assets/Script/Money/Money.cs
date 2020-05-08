@@ -7,6 +7,7 @@ using DG.Tweening;
 public class Money : MonoBehaviour
 {
     public Text moneyText;
+    public Text moneyText_bag;
     IEnumerator tempCount;
 
     private void Start()
@@ -35,6 +36,7 @@ public class Money : MonoBehaviour
             currentDouble += (offset * Time.deltaTime);
             string tempMoney = string.Format("{0:#,###}", (long)currentDouble);
             moneyText.text = tempMoney;
+            moneyText_bag.text = tempMoney+"(원)";
             yield return null;
         }
 
@@ -43,6 +45,7 @@ public class Money : MonoBehaviour
         if (target == 0)
             tempcurrent = "0";
         moneyText.text = tempcurrent;
+        moneyText_bag.text = tempcurrent + "(원)";
     }
 
     public void PlusMoney(int money)

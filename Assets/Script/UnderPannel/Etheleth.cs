@@ -155,7 +155,7 @@ public class Etheleth : MonoBehaviour
             grind_pannel.GetChild(i).Find("Bitamin").Find("Bitamin10").Find("Text").GetComponent<Text>().text = "0";
             grind_pannel.GetChild(i).Find("Bitamin").Find("Bitamin100").Find("Text").GetComponent<Text>().text = "0";
 
-            string temp_money_string = string.Format("{0:#,###}", (int)enhance_money[0]);
+            string temp_money_string = string.Format("{0:#,###}", (int)enhance_money[i]);
             grind_pannel.GetChild(i).Find("단련버튼").Find("Money").GetComponent<Text>().text = temp_money_string;
         }
     }

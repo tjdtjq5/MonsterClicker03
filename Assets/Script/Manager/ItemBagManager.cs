@@ -40,6 +40,7 @@ public class ItemBagManager : MonoBehaviour
     [Header("Blackpannel")]
     public GameObject blackpannel;
     public GameObject eqip_info;
+    public GameObject Enhace_info;
     /// <summary>
     /// 
     /// </summary>
@@ -294,6 +295,7 @@ public class ItemBagManager : MonoBehaviour
     {
         eqip_info.SetActive(false);
         blackpannel.SetActive(false);
+        Enhace_info.SetActive(false);
     }
 
     public void Eqip_Info() // 정보창 띄우기 
@@ -303,6 +305,7 @@ public class ItemBagManager : MonoBehaviour
 
         eqip_info.transform.Find("item_name").GetComponent<Text>().text = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_Name;
         eqip_info.transform.Find("item_image").GetChild(0).GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
+        eqip_info.transform.Find("item_image").GetChild(1).GetChild(0).GetComponent<Text>().text = "+" + select_eqip_item.enhance;
         eqip_info.transform.Find("item_info").GetChild(1).GetComponent<Text>().text =
              select_eqip_item.atk + "\n" + select_eqip_item.critical + "%\n" + select_eqip_item.shield + "\n" + select_eqip_item.hp + "\n" + select_eqip_item.atkspeed + "S\n" + select_eqip_item.speed + "S";
     }
@@ -312,5 +315,17 @@ public class ItemBagManager : MonoBehaviour
         GameManager.instance.userInfo.Eqipment(select_eqip_item);
         OnClickEqip();
         Set_Player_Info(); 
+    }
+
+    public void OnClickEnhance()
+    {
+        Enhace_info.SetActive(true);
+        Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("아이템이미지").GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
+        Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("강화정도").GetChild(0).GetComponent<Text>().text = "+" + (select_eqip_item.enhance + 1);
+    }
+
+    public void OnClick_Enhace_Exit()
+    {
+        Enhace_info.SetActive(false);
     }
 }
