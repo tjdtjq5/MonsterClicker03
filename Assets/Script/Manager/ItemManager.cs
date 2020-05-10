@@ -36,8 +36,8 @@ public class ItemManager : MonoBehaviour
     [Serializable]
     public struct Eqip_Struct
     {
-        public Eqip_kind eqip;
         public string eqip_Name;
+        public Eqip_kind eqip;
         public Sprite eqip_image;
         public bool eqip_kind;
         public string grade; // 등급 
@@ -74,6 +74,110 @@ public class ItemManager : MonoBehaviour
         return eqip_list[0];
     }
 
+
+    private void Awake()
+    {
+        for (int i = 0; i < eqip_list.Length; i++)
+        {
+            List<string> dataList = this.GetComponent<DatabaseManager>().Eqip_Item_DB.GetRowData(i + 1);
+            eqip_list[i].eqip_Name = dataList[3];
+            eqip_list[i].grade = dataList[2];
+            eqip_list[i].specialization = dataList[4];
+
+            float outFloat;
+            if (float.TryParse(dataList[5], out outFloat))
+                eqip_list[i].atk = (int)outFloat;
+            else
+                eqip_list[i].atk = 0;
+
+            if (float.TryParse(dataList[6], out outFloat))
+                eqip_list[i].atk_width = outFloat;
+            else
+                eqip_list[i].atk_width = 0;
+
+            if (float.TryParse(dataList[7], out outFloat))
+                eqip_list[i].atk_generation_percent = outFloat;
+            else
+                eqip_list[i].atk_generation_percent = 0;
+
+            if (float.TryParse(dataList[8], out outFloat))
+                eqip_list[i].critical = outFloat;
+            else
+                eqip_list[i].critical = 0;
+
+            if (float.TryParse(dataList[9], out outFloat))
+                eqip_list[i].critical_width = outFloat;
+            else
+                eqip_list[i].critical_width = 0;
+
+            if (float.TryParse(dataList[10], out outFloat))
+                eqip_list[i].critical_generation_percent = outFloat;
+            else
+                eqip_list[i].critical_generation_percent = 0;
+
+            if (float.TryParse(dataList[11], out outFloat))
+                eqip_list[i].shield = outFloat;
+            else
+                eqip_list[i].shield = 0;
+
+            if (float.TryParse(dataList[12], out outFloat))
+                eqip_list[i].shield_width = outFloat;
+            else
+                eqip_list[i].shield_width = 0;
+
+            if (float.TryParse(dataList[13], out outFloat))
+                eqip_list[i].shield_generation_percent = outFloat;
+            else
+                eqip_list[i].shield_generation_percent = 0;
+
+            if (float.TryParse(dataList[14], out outFloat))
+                eqip_list[i].hp = (int)outFloat;
+            else
+                eqip_list[i].hp = 0;
+
+            if (float.TryParse(dataList[15], out outFloat))
+                eqip_list[i].hp_width = outFloat;
+            else
+                eqip_list[i].hp_width = 0;
+
+            if (float.TryParse(dataList[16], out outFloat))
+                eqip_list[i].hp_generation_percent = outFloat;
+            else
+                eqip_list[i].hp_generation_percent = 0;
+
+            if (float.TryParse(dataList[17], out outFloat))
+                eqip_list[i].atkspeed = outFloat;
+            else
+                eqip_list[i].atkspeed = 0;
+
+            if (float.TryParse(dataList[18], out outFloat))
+                eqip_list[i].atkspeed_width = outFloat;
+            else
+                eqip_list[i].atkspeed_width = 0;
+
+            if (float.TryParse(dataList[19], out outFloat))
+                eqip_list[i].atkspeed_generation_percent = outFloat;
+            else
+                eqip_list[i].atkspeed_generation_percent = 0;
+
+            if (float.TryParse(dataList[20], out outFloat))
+                eqip_list[i].speed = outFloat;
+            else
+                eqip_list[i].speed = 0;
+
+            if (float.TryParse(dataList[21], out outFloat))
+                eqip_list[i].speed_width = outFloat;
+            else
+                eqip_list[i].speed_width = 0;
+
+            if (float.TryParse(dataList[21], out outFloat))
+                eqip_list[i].speed_generation_percent = outFloat;
+            else
+                eqip_list[i].speed_generation_percent = 0;
+
+        }
+    }
+
 }
 public enum Bitamin_kind
 {
@@ -85,6 +189,21 @@ public enum Bitamin_kind
 public enum Eqip_kind
 {
     Null,
+    신문지망토,
+    낡은책가방,
+    박스날개,
+    색종이망토,
+    리본장식가방,
+    종이날개,
+    노란색우비,
+    브랜드가방,
+    무지개날개,
+    비단망토,
+    상어지느러미,
+    공작새날개,
+    무지개망토,
+    거북이등껍질,
+    천사날개,
     끈리본,
     사탕머리띠,
     나뭇잎브로치,

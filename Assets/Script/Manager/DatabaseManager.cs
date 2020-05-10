@@ -7,6 +7,7 @@ public class DatabaseManager : MonoBehaviour
 {
     public DataBase Skill_DB;
     public DataBase Edu_DB;
+    public DataBase Eqip_Item_DB;
 }
 
 [Serializable]

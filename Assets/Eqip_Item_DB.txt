@@ -1,0 +1,41 @@
+string	string	string	string	string	float	float	float	float	float	float	float	float	float	float	float	float	float	float	float	float	float	float
+Equip01	Carrot01	Normal	갓 뽑은 당근	null	0	null	null	0	null	null	0	null	null	0	null	null	0	null	null	0	null	null
+Equip02	Carrot02	Normal	매끈한 당근	null	30	null	null	0	null	null	1.5	null	null	300	null	null	0	null	null	0	null	null
+Equip03	Carrot03	Rare	나무 고리 당근	null	100	null	null	1	null	null	2.5	null	null	1000	null	null	0.03	null	null	0.03	null	null
+Equip04	Carrot04	Rare	리본 묶은 당근	null	150	null	null	1.5	null	null	3.5	null	null	1500	null	null	0.04	null	null	0.04	null	null
+Equip05	Carrot05	Rare	아이언 당근	null	200	null	null	2	null	null	5	null	null	2000	null	null	0.05	null	null	0.05	null	null
+Equip06	Carrot06	Unique	토파즈 당근	null	400	null	null	4	null	null	10	null	null	4000	null	null	0.08	null	null	0.08	null	null
+Equip07	Carrot07	Unique	루비 당근	null	500	null	null	5	null	null	20	null	null	5000	null	null	0.09	null	null	0.09	null	null
+Equip08	Carrot08	Unique	크리스탈 당근	null	600	null	null	6	null	null	30	null	null	6000	null	null	0.1	null	null	0.1	null	null
+Equip09	Carrot09	Epic	다이아몬드 당근	null	800	null	null	8	null	null	40	null	null	8000	null	null	0.15	null	null	0.15	null	null
+Equip10	Carrot10	Legend	은하수 당근	null	1000	null	null	10	null	null	50	null	null	10000	null	null	0.25	null	null	0.25	null	null
+Equip11	Body01	Normal	신문지 망토	재능 특화	10	30	10	1	30	10	2	30	10	100	30	10	0.01	30	100	0.01	30	100
+Equip12	Body02	Normal	낡은 책가방	방어 특화	10	30	10	1	30	10	2	30	100	100	30	100	0.01	30	10	0.01	30	10
+Equip13	Body03	Normal	종이박스 날개	공격 특화	10	30	100	1	30	100	2	30	10	100	30	10	0.01	30	10	0.01	30	10
+Equip14	Body04	Rare	색종이 망토	재능 특화	20	30	10	1.5	30	10	4	30	10	200	30	10	0.02	30	100	0.02	30	100
+Equip15	Body05	Rare	리본장식 가방	방어 특화	20	30	10	1.5	30	10	4	30	100	200	30	100	0.02	30	10	0.02	30	10
+Equip16	Body06	Rare	종이비행기 날개	공격 특화	20	30	100	1.5	30	100	4	30	10	200	30	10	0.02	30	10	0.02	30	10
+Equip17	Body07	Unique	노란색 우비	재능 특화	30	30	10	2	30	10	6	30	10	300	30	10	0.03	30	100	0.03	30	100
+Equip18	Body08	Unique	브랜드 가방	방어 특화	30	30	10	2	30	10	6	30	100	300	30	100	0.03	30	10	0.03	30	10
+Equip19	Body09	Unique	무지개 날개	공격 특화	30	30	100	2	30	100	6	30	10	300	30	10	0.03	30	10	0.03	30	10
+Equip20	Body10	Epic	비단 망토	재능 특화	40	30	10	2.5	30	10	8	30	10	400	30	10	0.04	30	100	0.04	30	100
+Equip21	Body11	Epic	상어 지느러미	방어 특화	40	30	10	2.5	30	10	8	30	100	400	30	100	0.04	30	10	0.04	30	10
+Equip22	Body12	Epic	공작새 날개	공격 특화	40	30	100	2.5	30	100	8	30	10	400	30	10	0.04	30	10	0.04	30	10
+Equip23	Body13	Legend	무지개 망토	재능 특화	50	30	10	3	30	10	10	30	10	500	30	10	0.05	30	100	0.05	30	100
+Equip24	Body14	Legend	거북이 등껍질	방어 특화	50	30	10	3	30	10	10	30	100	500	30	100	0.05	30	10	0.05	30	10
+Equip25	Body15	Legend	천사 날개	공격 특화	50	30	100	3	30	100	10	30	10	500	30	10	0.05	30	10	0.05	30	10
+Equip26	Accessory01	Normal	끈 리본	재능 특화	10	30	10	1	30	10	2	30	10	100	30	10	0.01	30	100	0.01	30	100
+Equip27	Accessory02	Normal	사탕 머리띠	방어 특화	10	30	10	1	30	10	2	30	100	100	30	100	0.01	30	10	0.01	30	10
+Equip28	Accessory03	Normal	나뭇잎 브로치	공격 특화	10	30	100	1	30	100	2	30	10	100	30	10	0.01	30	10	0.01	30	10
+Equip29	Accessory04	Rare	나비 리본	재능 특화	20	30	10	1.5	30	10	4	30	10	200	30	10	0.02	30	100	0.02	30	100
+Equip30	Accessory05	Rare	무지개 머리띠	방어 특화	20	30	10	1.5	30	10	4	30	100	200	30	100	0.02	30	10	0.02	30	10
+Equip31	Accessory06	Rare	스마일 브로치	공격 특화	20	30	100	1.5	30	100	4	30	10	200	30	10	0.02	30	10	0.02	30	10
+Equip32	Accessory07	Unique	별 리본	재능 특화	30	30	10	2	30	10	6	30	10	300	30	10	0.03	30	100	0.03	30	100
+Equip33	Accessory08	Unique	안개꽃 화환	방어 특화	30	30	10	2	30	10	6	30	100	300	30	100	0.03	30	10	0.03	30	10
+Equip34	Accessory09	Unique	당근 판박이	공격 특화	30	30	100	2	30	100	6	30	10	300	30	10	0.03	30	10	0.03	30	10
+Equip35	Accessory10	Epic	최신형 만보기	재능 특화	40	30	10	2.5	30	10	8	30	10	400	30	10	0.04	30	100	0.04	30	100
+Equip36	Accessory11	Epic	장미 화환	방어 특화	40	30	10	2.5	30	10	8	30	100	400	30	100	0.04	30	10	0.04	30	10
+Equip37	Accessory12	Epic	잉어 판박이	공격 특화	40	30	100	2.5	30	100	8	30	10	400	30	10	0.04	30	10	0.04	30	10
+Equip38	Accessory13	Legend	음이온 목걸이	재능 특화	50	30	10	3	30	10	10	30	10	500	30	10	0.05	30	100	0.05	30	100
+Equip39	Accessory14	Legend	해바라기 화환	방어 특화	50	30	10	3	30	10	10	30	100	500	30	100	0.05	30	10	0.05	30	10
+Equip40	Accessory15	Legend	용 판박이	공격 특화	50	30	100	3	30	100	10	30	10	500	30	10	0.05	30	10	0.05	30	10

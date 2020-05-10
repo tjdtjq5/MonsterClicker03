@@ -66,11 +66,22 @@ public class UserInfo : MonoBehaviour
         SetItem(Bitamin_kind.bitamin10, 100);
         SetItem(Bitamin_kind.bitamin100, 100);
 
-
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.끈리본,0));
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.나뭇잎브로치, 0));
-        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.나비리본, 0));
+        
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.거북이등껍질,0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.낡은책가방, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.노란색우비, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.당근판박이, 0));
         player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.무지개머리띠, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.별리본, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.사탕머리띠, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.스마일브로치, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.안개꽃화환, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.용판박이, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.음이온목걸이, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.잉어판박이, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.장비화환, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.최신형만보기, 0));
+        player_eqip_list.Add(new User_Eqip_Info(Eqip_kind.해바라기화환, 0));
     }
 
 
@@ -394,6 +405,7 @@ public class UserInfo : MonoBehaviour
 public class User_Eqip_Info
 {
     public Eqip_kind eqip;
+    public string prefix;
     public int enhance;
     public bool isEqip;
     public int atk;
@@ -407,7 +419,8 @@ public class User_Eqip_Info
     {
         this.eqip = eqip;
         this.enhance = enhance;
-        
+
+        float prefix_iCount = 0;
         //공격력
         int atk_rand = Random.RandomRange(0, 100);
         if (GameManager.instance.itemManager.WhatEqip(eqip).atk_generation_percent > atk_rand)
@@ -417,6 +430,8 @@ public class User_Eqip_Info
             float temp_atk = GameManager.instance.itemManager.WhatEqip(eqip).atk;
             temp_atk += temp_atk * atk_width_rand;
             atk = (int)temp_atk;
+
+            prefix_iCount += atk_width_rand;
         }
         //크리티컬
         int critical_rand = Random.RandomRange(0, 100);
@@ -427,6 +442,8 @@ public class User_Eqip_Info
             float temp_critical = GameManager.instance.itemManager.WhatEqip(eqip).critical;
             temp_critical += temp_critical * critical_width_rand;
             critical = temp_critical;
+
+            prefix_iCount += critical_width_rand;
         }
         //방어력
         int shield_rand = Random.RandomRange(0, 100);
@@ -437,6 +454,8 @@ public class User_Eqip_Info
             float temp_shield = GameManager.instance.itemManager.WhatEqip(eqip).shield;
             temp_shield += temp_shield * shield_width_rand;
             shield = temp_shield;
+
+            prefix_iCount += shield_width_rand;
         }
         //체력
         int hp_rand = Random.RandomRange(0, 100);
@@ -447,6 +466,8 @@ public class User_Eqip_Info
             float temp_hp = GameManager.instance.itemManager.WhatEqip(eqip).hp;
             temp_hp += temp_hp * hp_width_rand;
             hp = (int)temp_hp;
+
+            prefix_iCount += hp_width_rand;
         }
         //공격속도
         int atkspeed_rand = Random.RandomRange(0, 100);
@@ -457,6 +478,8 @@ public class User_Eqip_Info
             float temp_atkspeed = GameManager.instance.itemManager.WhatEqip(eqip).atkspeed;
             temp_atkspeed += temp_atkspeed * atkspeed_width_rand;
             atkspeed = -temp_atkspeed;
+
+            prefix_iCount += atkspeed_width_rand;
         }
         //속력
         int speed_rand = Random.RandomRange(0, 100);
@@ -467,6 +490,35 @@ public class User_Eqip_Info
             float temp_speed = GameManager.instance.itemManager.WhatEqip(eqip).speed;
             temp_speed += temp_speed * speed_width_rand;
             speed = -temp_speed;
+
+            prefix_iCount += speed_width_rand;
         }
+
+        prefix_iCount *= 100;
+
+        if (prefix_iCount <= 10)
+            this.prefix = "";
+        if (11 <= prefix_iCount && prefix_iCount <= 20)
+            this.prefix = "쓸만한";
+        if (21 <= prefix_iCount && prefix_iCount <= 30)
+            this.prefix = "준수한";
+        if (31 <= prefix_iCount && prefix_iCount <= 40)
+            this.prefix = "희귀한";
+        if (41 <= prefix_iCount && prefix_iCount <= 50)
+            this.prefix = "특별한";
+        if (51 <= prefix_iCount && prefix_iCount <= 60)
+            this.prefix = "뛰어난";
+        if (61 <= prefix_iCount && prefix_iCount <= 80)
+            this.prefix = "화려한";
+        if (81 <= prefix_iCount && prefix_iCount <= 100)
+            this.prefix = "달빛";
+        if (101 <= prefix_iCount && prefix_iCount <= 120)
+            this.prefix = "태양빛";
+        if (121 <= prefix_iCount && prefix_iCount <= 140)
+            this.prefix = "온누리의";
+        if (141 <= prefix_iCount && prefix_iCount <= 161)
+            this.prefix = "우주의";
+        if (161 <= prefix_iCount )
+            this.prefix = "신의";
     }
 }

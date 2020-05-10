@@ -30,6 +30,9 @@ public class ItemBagManager : MonoBehaviour
     public Transform skill_pannel;
     public Transform etc_pannel;
 
+    [Header("Grade")]
+    public Sprite[] grade_image;
+
     [Header("Etc...")]
     public GameObject click_image;
     public GameObject eqip_name;
@@ -115,7 +118,7 @@ public class ItemBagManager : MonoBehaviour
             theCam_rotation.localRotation = Quaternion.Euler(theCam_rotation.localRotation.x + temp_y * sensibility, theCam_rotation.localRotation.y + temp_x * sensibility, theCam_rotation.localRotation.z);
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
             Vector2 mousePos = Input.mousePosition;
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 10f);
@@ -191,9 +194,31 @@ public class ItemBagManager : MonoBehaviour
 
         for (int i = 0; i < GameManager.instance.userInfo.player_eqip_list.Count; i++)
         {
-            eqip_pannel.GetChild(i).GetChild(0).gameObject.SetActive(true);
+            
+            switch (GameManager.instance.itemManager.WhatEqip(GameManager.instance.userInfo.player_eqip_list[i].eqip).grade)
+            {
+                case "Normal":
+                    eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[0];
+                    break;
+                case "Rare":
+                    eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[1];
+                    break;
+                case "Unique":
+                    eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[2];
+                    break;
+                case "Epic":
+                    eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[3];
+                    break;
+                case "Legend":
+                    eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[4];
+                    break;
+            }
+
+            eqip_pannel.GetChild(i).GetChild(0).gameObject.SetActive(true); 
             eqip_pannel.GetChild(i).GetChild(0).GetComponent<Image>().sprite =
                 GameManager.instance.itemManager.WhatEqip(GameManager.instance.userInfo.player_eqip_list[i].eqip).eqip_image;
+
+
             if (GameManager.instance.userInfo.player_eqip_list[i].isEqip == true)
             {
                 if (GameManager.instance.itemManager.WhatEqip(GameManager.instance.userInfo.player_eqip_list[i].eqip).eqip_kind == true)
@@ -303,7 +328,25 @@ public class ItemBagManager : MonoBehaviour
         blackpannel.SetActive(true);
         eqip_info.SetActive(true);
 
-        eqip_info.transform.Find("item_name").GetComponent<Text>().text = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_Name;
+        eqip_info.transform.Find("item_name").GetComponent<Text>().text = select_eqip_item.prefix + " " + GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_Name;
+        switch (GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).grade)
+        {
+            case "Normal":
+                eqip_info.transform.Find("item_image").GetComponent<Image>().sprite = grade_image[0];
+                break;
+            case "Rare":
+                eqip_info.transform.Find("item_image").GetComponent<Image>().sprite = grade_image[1];
+                break;
+            case "Unique":
+                eqip_info.transform.Find("item_image").GetComponent<Image>().sprite = grade_image[2];
+                break;
+            case "Epic":
+                eqip_info.transform.Find("item_image").GetComponent<Image>().sprite = grade_image[3];
+                break;
+            case "Legend":
+                eqip_info.transform.Find("item_image").GetComponent<Image>().sprite = grade_image[4];
+                break;
+        }
         eqip_info.transform.Find("item_image").GetChild(0).GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
         eqip_info.transform.Find("item_image").GetChild(1).GetChild(0).GetComponent<Text>().text = "+" + select_eqip_item.enhance;
         eqip_info.transform.Find("item_info").GetChild(1).GetComponent<Text>().text =
@@ -320,6 +363,24 @@ public class ItemBagManager : MonoBehaviour
     public void OnClickEnhance()
     {
         Enhace_info.SetActive(true);
+        switch (GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).grade)
+        {
+            case "Normal":
+                Enhace_info.transform.Find("아이템이미지").Find("아이템").GetComponent<Image>().sprite = grade_image[0];
+                break;
+            case "Rare":
+                Enhace_info.transform.Find("아이템이미지").Find("아이템").GetComponent<Image>().sprite = grade_image[1];
+                break;
+            case "Unique":
+                Enhace_info.transform.Find("아이템이미지").Find("아이템").GetComponent<Image>().sprite = grade_image[2];
+                break;
+            case "Epic":
+                Enhace_info.transform.Find("아이템이미지").Find("아이템").GetComponent<Image>().sprite = grade_image[3];
+                break;
+            case "Legend":
+                Enhace_info.transform.Find("아이템이미지").Find("아이템").GetComponent<Image>().sprite = grade_image[4];
+                break;
+        }
         Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("아이템이미지").GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
         Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("강화정도").GetChild(0).GetComponent<Text>().text = "+" + (select_eqip_item.enhance + 1);
     }

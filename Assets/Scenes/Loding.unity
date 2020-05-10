@@ -371,8 +371,8 @@ MonoBehaviour:
     bitamin_Name: "\uBE44\uD0C0\uBBFC100"
     bitamin_image: {fileID: 0}
   eqip_list:
-  - eqip: 0
-    eqip_Name: 
+  - eqip_Name: 
+    eqip: 0
     eqip_image: {fileID: 0}
     eqip_kind: 0
     grade: 
@@ -395,126 +395,942 @@ MonoBehaviour:
     speed: 0
     speed_width: 0
     speed_generation_percent: 0
-  - eqip: 1
-    eqip_Name: "\uB048 \uB9AC\uBCF8"
-    eqip_image: {fileID: 21300000, guid: a78bc671161d8be42a3a2dc74b52c5c4, type: 3}
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
     eqip_kind: 0
-    grade: Nomal
-    specialization: "\uC7AC\uB2A5 \uD2B9\uD654"
-    atk: 10
-    atk_width: 30
-    atk_generation_percent: 10
-    critical: 100
-    critical_width: 30
-    critical_generation_percent: 10
-    shield: 1
-    shield_width: 30
-    shield_generation_percent: 10
-    hp: 2
-    hp_width: 30
-    hp_generation_percent: 10
-    atkspeed: 0.1
-    atkspeed_width: 30
-    atkspeed_generation_percent: 100
-    speed: 0.1
-    speed_width: 30
-    speed_generation_percent: 100
-  - eqip: 2
-    eqip_Name: "\uC0AC\uD0D5 \uBA38\uB9AC\uB760"
-    eqip_image: {fileID: 21300000, guid: 5e9787a1b63db65488029fbf798b34b7, type: 3}
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
     eqip_kind: 0
-    grade: Nomal
-    specialization: "\uBC29\uC5B4 \uD2B9\uD654"
-    atk: 10
-    atk_width: 30
-    atk_generation_percent: 10
-    critical: 100
-    critical_width: 30
-    critical_generation_percent: 100
-    shield: 1
-    shield_width: 30
-    shield_generation_percent: 10
-    hp: 2
-    hp_width: 30
-    hp_generation_percent: 100
-    atkspeed: 0.1
-    atkspeed_width: 30
-    atkspeed_generation_percent: 10
-    speed: 0.1
-    speed_width: 30
-    speed_generation_percent: 10
-  - eqip: 3
-    eqip_Name: "\uB098\uBB47\uC78E \uBE0C\uB85C\uCE58"
-    eqip_image: {fileID: 21300000, guid: 69a577fbea441f744ac42a1516d7e79c, type: 3}
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
     eqip_kind: 0
-    grade: Nomal
-    specialization: "\uACF5\uACA9 \uD2B9\uD654"
-    atk: 10
-    atk_width: 30
-    atk_generation_percent: 100
-    critical: 1
-    critical_width: 30
-    critical_generation_percent: 100
-    shield: 2
-    shield_width: 30
-    shield_generation_percent: 10
-    hp: 100
-    hp_width: 30
-    hp_generation_percent: 10
-    atkspeed: 0.1
-    atkspeed_width: 30
-    atkspeed_generation_percent: 10
-    speed: 0.1
-    speed_width: 30
-    speed_generation_percent: 10
-  - eqip: 4
-    eqip_Name: "\uB098\uBE44 \uB9AC\uBCF8"
-    eqip_image: {fileID: 21300000, guid: 7f14309bc05fa264b94377c115faa1b6, type: 3}
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
     eqip_kind: 0
-    grade: Rare
-    specialization: "\uC7AC\uB2A5\uD2B9\uD654"
-    atk: 20
-    atk_width: 30
-    atk_generation_percent: 10
-    critical: 1.5
-    critical_width: 30
-    critical_generation_percent: 10
-    shield: 4
-    shield_width: 30
-    shield_generation_percent: 10
-    hp: 200
-    hp_width: 30
-    hp_generation_percent: 10
-    atkspeed: 0.2
-    atkspeed_width: 30
-    atkspeed_generation_percent: 100
-    speed: 0.2
-    speed_width: 30
-    speed_generation_percent: 100
-  - eqip: 5
-    eqip_Name: "\uBB34\uC9C0\uAC1C \uBA38\uB9AC\uB760"
-    eqip_image: {fileID: 21300000, guid: 07103c52b3aaeca4da8a83361edd059f, type: 3}
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
     eqip_kind: 0
-    grade: Rare
-    specialization: "\uBC29\uC5B4\uD2B9\uD654"
-    atk: 20
-    atk_width: 30
-    atk_generation_percent: 10
-    critical: 1.5
-    critical_width: 30
-    critical_generation_percent: 10
-    shield: 4
-    shield_width: 30
-    shield_generation_percent: 100
-    hp: 200
-    hp_width: 30
-    hp_generation_percent: 100
-    atkspeed: 0.2
-    atkspeed_width: 30
-    atkspeed_generation_percent: 10
-    speed: 0.2
-    speed_width: 30
-    speed_generation_percent: 10
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 0
+    eqip_image: {fileID: 0}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 1
+    eqip_image: {fileID: 21300000, guid: 9089bc160101d974eb26d1517ec775ae, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 2
+    eqip_image: {fileID: 21300000, guid: c1ecbe9b032ab3847a11471999cfd2ae, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 3
+    eqip_image: {fileID: 21300000, guid: d748020299220094ba7a41e0a60bb809, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 4
+    eqip_image: {fileID: 21300000, guid: 9adc392a26b06af4a83dcb8fc4e3f53d, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 5
+    eqip_image: {fileID: 21300000, guid: f92759d3082929349a7f0ea11c6365e8, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 6
+    eqip_image: {fileID: 21300000, guid: 14e433d2d278bea4b989d08d0d708693, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 7
+    eqip_image: {fileID: 21300000, guid: d4899f0d559098b47a6d947761afeccd, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 8
+    eqip_image: {fileID: 21300000, guid: c9c4dfd89775ed44bbfa228299a43ad0, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 9
+    eqip_image: {fileID: 21300000, guid: a90c4fe7835ceac4c9c09f1f7d98fd17, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 10
+    eqip_image: {fileID: 21300000, guid: d767ff7eeac35af44ae17958bd8fe2ee, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 11
+    eqip_image: {fileID: 21300000, guid: fde25e4effcb7f244929e56b9390170b, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 12
+    eqip_image: {fileID: 21300000, guid: 53fba6df440ce1d44b95b3b7c4175a54, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 13
+    eqip_image: {fileID: 21300000, guid: 1c4c8f4136fc79242a8abf7171ba379e, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 14
+    eqip_image: {fileID: 21300000, guid: 1814b4a30fa74bd4ba4982dcfdb69a47, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 15
+    eqip_image: {fileID: 21300000, guid: 2856913786433ac4e860b18988a59f26, type: 3}
+    eqip_kind: 1
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 16
+    eqip_image: {fileID: 21300000, guid: 5f6257748758d4f42abf0925ddba767e, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 17
+    eqip_image: {fileID: 21300000, guid: 44281d76fb596124d8be5e2bdc8e6904, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 18
+    eqip_image: {fileID: 21300000, guid: 2adac778bd602b04c9afd430cea9c1b6, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 19
+    eqip_image: {fileID: 21300000, guid: 9bbe61f3372f0774d9bf86fd3c4831b5, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 20
+    eqip_image: {fileID: 21300000, guid: 634768d8a444c6a44a5903499246e3b5, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 21
+    eqip_image: {fileID: 21300000, guid: 7a2c68490344e4944b2dde3ce4ce0426, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 22
+    eqip_image: {fileID: 21300000, guid: c300bdada4333ad4aaef764d2e09b431, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 23
+    eqip_image: {fileID: 21300000, guid: 2f2ccc272b3cac74b969ddb20261f871, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 24
+    eqip_image: {fileID: 21300000, guid: 8df121047935c264b86b16d98dff9b38, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 25
+    eqip_image: {fileID: 21300000, guid: f80610391f71fcc41870402fb233007a, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 26
+    eqip_image: {fileID: 21300000, guid: 402ede812dd7c6747ad80bd7088ee8ce, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 27
+    eqip_image: {fileID: 21300000, guid: 69eead2b03651be40bcd5e1560c507ea, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 28
+    eqip_image: {fileID: 21300000, guid: bdfd1a4a47880e643aa770dd0118d117, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 29
+    eqip_image: {fileID: 21300000, guid: b20679035a367994994bedbac402cfe2, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
+  - eqip_Name: 
+    eqip: 30
+    eqip_image: {fileID: 21300000, guid: 92bc5bb5cb8983647a5ba21a1096eb5a, type: 3}
+    eqip_kind: 0
+    grade: 
+    specialization: 
+    atk: 0
+    atk_width: 0
+    atk_generation_percent: 0
+    critical: 0
+    critical_width: 0
+    critical_generation_percent: 0
+    shield: 0
+    shield_width: 0
+    shield_generation_percent: 0
+    hp: 0
+    hp_width: 0
+    hp_generation_percent: 0
+    atkspeed: 0
+    atkspeed_width: 0
+    atkspeed_generation_percent: 0
+    speed: 0
+    speed_width: 0
+    speed_generation_percent: 0
 --- !u!114 &749467063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,6 +1475,8 @@ MonoBehaviour:
     txt: {fileID: 4900000, guid: 15c2b6dfcf48eaf46a66841be524f6f5, type: 3}
   Edu_DB:
     txt: {fileID: 4900000, guid: 70324407444e1574381763556e1ed183, type: 3}
+  Eqip_Item_DB:
+    txt: {fileID: 4900000, guid: 68c87a72115aed545a20b0f3de02044e, type: 3}
 --- !u!114 &749467067
 MonoBehaviour:
   m_ObjectHideFlags: 0
