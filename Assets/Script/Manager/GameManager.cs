@@ -115,9 +115,9 @@ public class GameManager : MonoBehaviour
         int eqipAtk_false = 0;
         int eqipAtk_true = 0;
         if (userInfo.Get_Eqiping_Item(false) != null)
-            eqipAtk_false = userInfo.Get_Eqiping_Item(false).atk;
+            eqipAtk_false = userInfo.Get_Eqiping_Item(false).Atk();
         if (userInfo.Get_Eqiping_Item(true) != null)
-            eqipAtk_true = userInfo.Get_Eqiping_Item(true).atk;
+            eqipAtk_true = userInfo.Get_Eqiping_Item(true).Atk();
 
         tempAtk = (tempAtk + carrotAtk) + eqipAtk_false + eqipAtk_true;
         return tempAtk;
@@ -136,9 +136,9 @@ public class GameManager : MonoBehaviour
         int eqipHp_false = 0;
         int eqipHp_true = 0;
         if (userInfo.Get_Eqiping_Item(false) != null)
-            eqipHp_false = userInfo.Get_Eqiping_Item(false).hp;
+            eqipHp_false = userInfo.Get_Eqiping_Item(false).Hp();
         if (userInfo.Get_Eqiping_Item(true) != null)
-            eqipHp_true = userInfo.Get_Eqiping_Item(true).hp;
+            eqipHp_true = userInfo.Get_Eqiping_Item(true).Hp();
 
         return tempHp + eqipHp_false + eqipHp_true;
     }
@@ -153,9 +153,9 @@ public class GameManager : MonoBehaviour
         float eqipSpeed_false = 0;
         float eqipSpeed_true = 0;
         if (userInfo.Get_Eqiping_Item(false) != null)
-            eqipSpeed_false = userInfo.Get_Eqiping_Item(false).speed;
+            eqipSpeed_false = userInfo.Get_Eqiping_Item(false).Speed();
         if (userInfo.Get_Eqiping_Item(true) != null)
-            eqipSpeed_true = userInfo.Get_Eqiping_Item(true).speed;
+            eqipSpeed_true = userInfo.Get_Eqiping_Item(true).Speed();
 
 
         return tempSpeed + eqipSpeed_false + eqipSpeed_true;
@@ -171,9 +171,9 @@ public class GameManager : MonoBehaviour
         float eqipSheild_false = 0;
         float eqipSheild_true = 0;
         if (userInfo.Get_Eqiping_Item(false) != null)
-            eqipSheild_false = userInfo.Get_Eqiping_Item(false).shield;
+            eqipSheild_false = userInfo.Get_Eqiping_Item(false).Shield();
         if (userInfo.Get_Eqiping_Item(true) != null)
-            eqipSheild_true = userInfo.Get_Eqiping_Item(true).shield;
+            eqipSheild_true = userInfo.Get_Eqiping_Item(true).Shield();
 
         return tempSheild + eqipSheild_false + eqipSheild_true;
     }
@@ -188,9 +188,9 @@ public class GameManager : MonoBehaviour
         float eqipCritical_false = 0;
         float eqipCritical_true = 0;
         if (userInfo.Get_Eqiping_Item(false) != null)
-            eqipCritical_false = userInfo.Get_Eqiping_Item(false).critical;
+            eqipCritical_false = userInfo.Get_Eqiping_Item(false).Critical();
         if (userInfo.Get_Eqiping_Item(true) != null)
-            eqipCritical_true = userInfo.Get_Eqiping_Item(true).critical;
+            eqipCritical_true = userInfo.Get_Eqiping_Item(true).Critical();
 
         return tempCritical + eqipCritical_false + eqipCritical_true;
     }
@@ -205,9 +205,9 @@ public class GameManager : MonoBehaviour
         float eqipAtkSpeed_false = 0;
         float eqipAtkSpeed_true = 0;
         if (userInfo.Get_Eqiping_Item(false) != null)
-            eqipAtkSpeed_false = userInfo.Get_Eqiping_Item(false).atkspeed;
+            eqipAtkSpeed_false = userInfo.Get_Eqiping_Item(false).AtkSpeed();
         if (userInfo.Get_Eqiping_Item(true) != null)
-            eqipAtkSpeed_true = userInfo.Get_Eqiping_Item(true).atkspeed;
+            eqipAtkSpeed_true = userInfo.Get_Eqiping_Item(true).AtkSpeed();
 
         return tempAtkSpeed + eqipAtkSpeed_false + eqipAtkSpeed_true;
     }

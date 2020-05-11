@@ -1477,6 +1477,8 @@ MonoBehaviour:
     txt: {fileID: 4900000, guid: 70324407444e1574381763556e1ed183, type: 3}
   Eqip_Item_DB:
     txt: {fileID: 4900000, guid: 68c87a72115aed545a20b0f3de02044e, type: 3}
+  Enhance_DB:
+    txt: {fileID: 4900000, guid: c5bcd62c5d2fa174d80b321fc6880be5, type: 3}
 --- !u!114 &749467067
 MonoBehaviour:
   m_ObjectHideFlags: 0

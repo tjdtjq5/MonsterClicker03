@@ -6,9 +6,16 @@ using DG.Tweening;
 
 public class Money : MonoBehaviour
 {
+    public static Money instance;
+
     public Text moneyText;
     public Text moneyText_bag;
     IEnumerator tempCount;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

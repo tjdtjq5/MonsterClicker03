@@ -3435,7 +3435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -681.76514}
+  m_AnchoredPosition: {x: 0, y: -681.7649}
   m_SizeDelta: {x: 1050, y: 650}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &50463259
@@ -64066,6 +64066,7 @@ GameObject:
   - component: {fileID: 1159833643}
   - component: {fileID: 1159833645}
   - component: {fileID: 1159833644}
+  - component: {fileID: 1159833646}
   m_Layer: 13
   m_Name: enhance_info
   m_TagString: Untagged
@@ -64134,6 +64135,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159833642}
   m_CullTransparentMesh: 0
+--- !u!95 &1159833646
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159833642}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1094774992c4a774b804b0139bad9d14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1161014359
 GameObject:
   m_ObjectHideFlags: 0
@@ -85692,7 +85712,6 @@ GameObject:
   - component: {fileID: 1494563666}
   - component: {fileID: 1494563668}
   - component: {fileID: 1494563667}
-  - component: {fileID: 1494563669}
   m_Layer: 13
   m_Name: Blackpannel
   m_TagString: Untagged
@@ -85756,32 +85775,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1494563665}
   m_CullTransparentMesh: 0
---- !u!61 &1494563669
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1494563665}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1080, y: 1920}
-  m_EdgeRadius: 0
 --- !u!1 &1497022517
 GameObject:
   m_ObjectHideFlags: 0
@@ -86263,7 +86256,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 518211003}
   m_HandleRect: {fileID: 518211002}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.9999997
   m_Size: 0.32716018
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -102551,7 +102544,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.481
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -114818,7 +114811,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2065111191}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1941523497}
+        m_MethodName: Enhance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2065111191
 MonoBehaviour:
   m_ObjectHideFlags: 0

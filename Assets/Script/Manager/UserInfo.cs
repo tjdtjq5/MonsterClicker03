@@ -358,7 +358,7 @@ public class UserInfo : MonoBehaviour
     /// <param name="eqip"></param>
     /// 
 
-    public void Get_Eqipitem(Eqip_kind eqip, int enhance)
+    public void Set_Eqipitem(Eqip_kind eqip, int enhance)
     {
         player_eqip_list.Add(new User_Eqip_Info(eqip, enhance));
     }
@@ -399,6 +399,13 @@ public class UserInfo : MonoBehaviour
             }
         }
     }
+
+    public void Eqip_Item_Enhance(User_Eqip_Info enhace_item)
+    {
+        enhace_item.enhance++;
+        if (enhace_item.enhance > 15)
+            enhace_item.enhance = 15;
+    }
 }
 
 
@@ -408,12 +415,12 @@ public class User_Eqip_Info
     public string prefix;
     public int enhance;
     public bool isEqip;
-    public int atk;
-    public float critical;
-    public float shield;
-    public int hp;
-    public float atkspeed;
-    public float speed;
+    int origin_atk;
+    float origin_critical;
+    float origin_shield;
+    int origin_hp;
+    float origin_atkspeed;
+    float origin_speed;
 
     public User_Eqip_Info(Eqip_kind eqip, int enhance)
     {
@@ -429,7 +436,7 @@ public class User_Eqip_Info
             float atk_width_rand = Random.RandomRange(-width, width) / (float)100;
             float temp_atk = GameManager.instance.itemManager.WhatEqip(eqip).atk;
             temp_atk += temp_atk * atk_width_rand;
-            atk = (int)temp_atk;
+            origin_atk = (int)temp_atk;
 
             prefix_iCount += atk_width_rand;
         }
@@ -441,7 +448,7 @@ public class User_Eqip_Info
             float critical_width_rand = Random.RandomRange(-width, width) / (float)100;
             float temp_critical = GameManager.instance.itemManager.WhatEqip(eqip).critical;
             temp_critical += temp_critical * critical_width_rand;
-            critical = temp_critical;
+            origin_critical = temp_critical;
 
             prefix_iCount += critical_width_rand;
         }
@@ -453,7 +460,7 @@ public class User_Eqip_Info
             float shield_width_rand = Random.RandomRange(-width, width) / (float)100;
             float temp_shield = GameManager.instance.itemManager.WhatEqip(eqip).shield;
             temp_shield += temp_shield * shield_width_rand;
-            shield = temp_shield;
+            origin_shield = temp_shield;
 
             prefix_iCount += shield_width_rand;
         }
@@ -465,7 +472,7 @@ public class User_Eqip_Info
             float hp_width_rand = Random.RandomRange(-width, width) / (float)100;
             float temp_hp = GameManager.instance.itemManager.WhatEqip(eqip).hp;
             temp_hp += temp_hp * hp_width_rand;
-            hp = (int)temp_hp;
+            origin_hp = (int)temp_hp;
 
             prefix_iCount += hp_width_rand;
         }
@@ -477,7 +484,7 @@ public class User_Eqip_Info
             float atkspeed_width_rand = Random.RandomRange(-width, width) / (float)100;
             float temp_atkspeed = GameManager.instance.itemManager.WhatEqip(eqip).atkspeed;
             temp_atkspeed += temp_atkspeed * atkspeed_width_rand;
-            atkspeed = -temp_atkspeed;
+            origin_atkspeed = -temp_atkspeed;
 
             prefix_iCount += atkspeed_width_rand;
         }
@@ -489,7 +496,7 @@ public class User_Eqip_Info
             float speed_width_rand = Random.RandomRange(-width, width) / (float)100;
             float temp_speed = GameManager.instance.itemManager.WhatEqip(eqip).speed;
             temp_speed += temp_speed * speed_width_rand;
-            speed = -temp_speed;
+            origin_speed = -temp_speed;
 
             prefix_iCount += speed_width_rand;
         }
@@ -520,5 +527,74 @@ public class User_Eqip_Info
             this.prefix = "우주의";
         if (161 <= prefix_iCount )
             this.prefix = "신의";
+
+
+        
+    }
+
+    public int Atk()
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (int)(origin_atk * percent);
+    }
+    public int Atk(int enhance)
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (int)(origin_atk * percent);
+    }
+
+    public float Critical()
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_critical * percent);
+    }
+    public float Critical(int enhance)
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_critical * percent);
+    }
+
+    public float Shield()
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_shield * percent);
+    }
+    public float Shield(int enhance)
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_shield * percent);
+    }
+
+    public int Hp()
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (int)(origin_hp * percent);
+    }
+    public int Hp(int enhance)
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (int)(origin_hp * percent);
+    }
+
+    public float AtkSpeed()
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_atkspeed * percent);
+    }
+    public float AtkSpeed(int enhance)
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_atkspeed * percent);
+    }
+
+    public float Speed()
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_speed * percent);
+    }
+    public float Speed(int enhance)
+    {
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        return (origin_speed * percent);
     }
 }

@@ -125,7 +125,7 @@ public class ItemBagManager : MonoBehaviour
             if (hit)
             {
                 string name = hit.transform.gameObject.name;
-                if (name.Contains("아이템_칸"))
+                if (name.Contains("아이템_칸") && !eqip_info_flag)
                 {
                     string temp_num = name.Split('(')[1];
                     int num = int.Parse(temp_num.Split(')')[0]);
@@ -213,11 +213,12 @@ public class ItemBagManager : MonoBehaviour
                     eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[4];
                     break;
             }
-
+            // 이미지
             eqip_pannel.GetChild(i).GetChild(0).gameObject.SetActive(true); 
             eqip_pannel.GetChild(i).GetChild(0).GetComponent<Image>().sprite =
                 GameManager.instance.itemManager.WhatEqip(GameManager.instance.userInfo.player_eqip_list[i].eqip).eqip_image;
-
+            // 강화 정도
+            eqip_pannel.GetChild(i).GetChild(1).GetChild(0).GetComponent<Text>().text = "+" + GameManager.instance.userInfo.player_eqip_list[i].enhance;
 
             if (GameManager.instance.userInfo.player_eqip_list[i].isEqip == true)
             {
@@ -237,6 +238,7 @@ public class ItemBagManager : MonoBehaviour
             else
                 eqip_pannel.GetChild(i).Find("장착중_텍스트").gameObject.SetActive(false);
         }
+
 
         click_image.transform.position = new Vector2(3000, 3000);
         eqip_pannel.localPosition = pannel_position;
@@ -318,13 +320,19 @@ public class ItemBagManager : MonoBehaviour
     ///
     public void OnClick_Eqip_Info_Exit() // 정보창 나가기 
     {
+        if (enhance_coroutine_flag)
+            return;
+
         eqip_info.SetActive(false);
         blackpannel.SetActive(false);
-        Enhace_info.SetActive(false);
+        OnClick_Enhace_Exit();
+        eqip_info_flag = false;
     }
 
+    bool eqip_info_flag;
     public void Eqip_Info() // 정보창 띄우기 
     {
+        eqip_info_flag = true;
         blackpannel.SetActive(true);
         eqip_info.SetActive(true);
 
@@ -350,7 +358,7 @@ public class ItemBagManager : MonoBehaviour
         eqip_info.transform.Find("item_image").GetChild(0).GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
         eqip_info.transform.Find("item_image").GetChild(1).GetChild(0).GetComponent<Text>().text = "+" + select_eqip_item.enhance;
         eqip_info.transform.Find("item_info").GetChild(1).GetComponent<Text>().text =
-             select_eqip_item.atk + "\n" + select_eqip_item.critical + "%\n" + select_eqip_item.shield + "\n" + select_eqip_item.hp + "\n" + select_eqip_item.atkspeed + "S\n" + select_eqip_item.speed + "S";
+             select_eqip_item.Atk() + "\n" + select_eqip_item.Critical() + "%\n" + select_eqip_item.Shield() + "\n" + select_eqip_item.Hp() + "\n" + select_eqip_item.AtkSpeed() + "S\n" + select_eqip_item.Speed() + "S";
     }
 
     public void Eqipment()
@@ -360,6 +368,7 @@ public class ItemBagManager : MonoBehaviour
         Set_Player_Info(); 
     }
 
+    int enhance_money;
     public void OnClickEnhance()
     {
         Enhace_info.SetActive(true);
@@ -382,11 +391,131 @@ public class ItemBagManager : MonoBehaviour
                 break;
         }
         Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("아이템이미지").GetComponent<Image>().sprite = GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_image;
-        Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("강화정도").GetChild(0).GetComponent<Text>().text = "+" + (select_eqip_item.enhance + 1);
+
+        if(select_eqip_item.enhance >= 15)
+        {
+            Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("강화정도").GetChild(0).GetComponent<Text>().text = "+" + (select_eqip_item.enhance);
+            Enhace_info.transform.Find("아이템정보").GetChild(0).GetChild(0).GetComponent<Text>().text =
+                select_eqip_item.Atk() + "\n" + select_eqip_item.Critical() + "%\n" + select_eqip_item.Shield() + "\n" + select_eqip_item.Hp() + "\n" + select_eqip_item.AtkSpeed() + "S\n" + select_eqip_item.Speed() + "S";
+        }
+        else
+        {
+            Enhace_info.transform.Find("아이템이미지").Find("아이템").Find("강화정도").GetChild(0).GetComponent<Text>().text = "+" + (select_eqip_item.enhance + 1);
+            Enhace_info.transform.Find("아이템정보").GetChild(0).GetChild(0).GetComponent<Text>().text =
+                select_eqip_item.Atk(select_eqip_item.enhance + 1) + "\n" + select_eqip_item.Critical(select_eqip_item.enhance + 1) + "%\n" + select_eqip_item.Shield(select_eqip_item.enhance + 1) + "\n" + select_eqip_item.Hp(select_eqip_item.enhance + 1) + "\n" + select_eqip_item.AtkSpeed(select_eqip_item.enhance + 1) + "S\n" + select_eqip_item.Speed(select_eqip_item.enhance + 1) + "S";
+        }
+
+        int current_enhance = select_eqip_item.enhance;
+
+        List<string> enhance_data = GameManager.instance.databaseManager.Enhance_DB.GetRowData(current_enhance + 1);
+        string prefix = select_eqip_item.prefix;
+
+        switch (prefix)
+        {
+            case "":
+                enhance_money = int.Parse(enhance_data[6]);
+                break;
+            case "쓸만한":
+                enhance_money = int.Parse(enhance_data[8]);
+                break;
+            case "준수한":
+                enhance_money = int.Parse(enhance_data[10]);
+                break;
+            case "희귀한":
+                enhance_money = int.Parse(enhance_data[12]);
+                break;
+            case "특별한":
+                enhance_money = int.Parse(enhance_data[14]);
+                break;
+            case "뛰어난":
+                enhance_money = int.Parse(enhance_data[16]);
+                break;
+            case "화려한":
+                enhance_money = int.Parse(enhance_data[18]);
+                break;
+            case "달빛":
+                enhance_money = int.Parse(enhance_data[20]);
+                break;
+            case "태양빛":
+                enhance_money = int.Parse(enhance_data[22]);
+                break;
+            case "온누리의":
+                enhance_money = int.Parse(enhance_data[24]);
+                break;
+            case "우주의":
+                enhance_money = int.Parse(enhance_data[26]);
+                break;
+            case "신의":
+                enhance_money = int.Parse(enhance_data[28]);
+                break;
+        }
+
+        Enhace_info.transform.Find("강화비용텍스트").GetComponent<Text>().text = "비용 : " + enhance_money.ToString() + "(원)";
     }
 
     public void OnClick_Enhace_Exit()
     {
+        if (enhance_coroutine_flag)
+            return;
+
+        OnClickEqip(); 
+        if (Enhance_Coroutine != null)
+        {
+            StopCoroutine(Enhance_Coroutine);
+        }
         Enhace_info.SetActive(false);
+    }
+
+    public void Enhance()
+    {
+        if (enhance_coroutine_flag)
+            return;
+
+        int current_enhance = select_eqip_item.enhance;
+
+        if (current_enhance >= 15 && GameManager.instance.userInfo.GetMoney() < enhance_money) // 돈이 부족하거나 강화단계가 15 이상이면 리턴
+            return;
+
+        List<string> enhance_data = GameManager.instance.databaseManager.Enhance_DB.GetRowData(current_enhance + 1);
+        int enhance_percent = int.Parse(enhance_data[2]); // 강화 성공 확률
+        int random_percent = Random.RandomRange(0, 100);
+        if (random_percent < enhance_percent) // 성공
+        {
+            Enhance_Coroutine = Enhance_Succes_Coroutine();
+        }
+        else // 실패
+        {
+            Enhance_Coroutine = Enhance_Fail_Coroutine();
+        }
+
+        StartCoroutine(Enhance_Coroutine);
+    }
+    IEnumerator Enhance_Coroutine;
+    bool enhance_coroutine_flag;
+    IEnumerator Enhance_Succes_Coroutine()
+    {
+        enhance_coroutine_flag = true;
+        Enhace_info.GetComponent<Animator>().SetBool("enhance_succes", true);
+        yield return new WaitForSeconds(1.5f);
+        Money.instance.PlusMoney(-enhance_money);
+        select_eqip_item.enhance++;
+        yield return new WaitForSeconds(1.6f);
+        Enhace_info.GetComponent<Animator>().SetBool("enhance_succes", false);
+        OnClickEnhance();
+        Eqip_Info();
+        OnClickEqip();
+        enhance_coroutine_flag = false;
+    }
+    IEnumerator Enhance_Fail_Coroutine()
+    {
+        enhance_coroutine_flag = true; 
+        Enhace_info.GetComponent<Animator>().SetBool("enhance_fail", true);
+        yield return new WaitForSeconds(1.5f);
+        Money.instance.PlusMoney(-enhance_money);
+        yield return new WaitForSeconds(1.6f);
+        Enhace_info.GetComponent<Animator>().SetBool("enhance_fail", false);
+        OnClickEnhance();
+        Eqip_Info();
+        enhance_coroutine_flag = false;
     }
 }
