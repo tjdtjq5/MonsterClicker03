@@ -358,12 +358,12 @@ public class UserInfo : MonoBehaviour
     /// <param name="eqip"></param>
     /// 
 
-    public void Set_Eqipitem(Eqip_kind eqip, int enhance)
+    public void Set_Eqipitem(Eqip_kind eqip, int enhance) // 장비 얻기
     {
         player_eqip_list.Add(new User_Eqip_Info(eqip, enhance));
     }
 
-    public User_Eqip_Info Get_Eqiping_Item(bool eqip_kind)
+    public User_Eqip_Info Get_Eqiping_Item(bool eqip_kind) // 장비중인 장비 정보 얻기 
     {
         for (int i = 0; i < player_eqip_list.Count; i++)
         {
@@ -379,9 +379,20 @@ public class UserInfo : MonoBehaviour
         return null;
     }
 
-    public void Eqipment(User_Eqip_Info eqip)
+    public void RemoveEqip(User_Eqip_Info eqip) // 장비 제거 
     {
         for (int i = 0; i < player_eqip_list.Count; i++)
+        {
+            if (player_eqip_list[i] == eqip)
+            {
+                player_eqip_list.RemoveAt(i);
+            }
+        }
+    }
+
+    public void Eqipment(User_Eqip_Info eqip)
+    {
+        for (int i = 0; i < player_eqip_list.Count; i++) //우선 bool 값인 eqipkind를 전부 false 시킨다. 
         {
             if (GameManager.instance.itemManager.WhatEqip(eqip.eqip).eqip_kind ==
                 GameManager.instance.itemManager.WhatEqip(player_eqip_list[i].eqip).eqip_kind)
@@ -390,7 +401,7 @@ public class UserInfo : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < player_eqip_list.Count; i++)
+        for (int i = 0; i < player_eqip_list.Count; i++) //해당 eqip만 true
         {
             if (player_eqip_list[i] == eqip)
             {

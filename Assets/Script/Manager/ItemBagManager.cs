@@ -40,10 +40,12 @@ public class ItemBagManager : MonoBehaviour
     public GameObject food_name;
     int pannel_num;
 
-    [Header("Blackpannel")]
+    [Header("Blackpannel_장비")]
     public GameObject blackpannel;
     public GameObject eqip_info;
     public GameObject Enhace_info;
+    public GameObject sell;
+
     /// <summary>
     /// 
     /// </summary>
@@ -186,17 +188,19 @@ public class ItemBagManager : MonoBehaviour
     }
 
     [Header("잠금 이미지")]
-    public Sprite look_image;
+    public Sprite lock_image;
     void OnClickEqip()
     {
         for (int i = 0; i < GameManager.instance.userInfo.bag_num; i++)
         {
+            eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[0];
             eqip_pannel.GetChild(i).GetChild(0).gameObject.SetActive(false);
         }
         for (int i = GameManager.instance.userInfo.bag_num; i < eqip_pannel.childCount; i++)
         {
+            eqip_pannel.GetChild(i).GetComponent<Image>().sprite = grade_image[0];
             eqip_pannel.GetChild(i).GetChild(0).gameObject.SetActive(true);
-            eqip_pannel.GetChild(i).GetChild(0).GetComponent<Image>().sprite = look_image;
+            eqip_pannel.GetChild(i).GetChild(0).GetComponent<Image>().sprite = lock_image;
         }
 
         eqip_btn[0].transform.GetChild(0).gameObject.SetActive(false);
@@ -334,6 +338,7 @@ public class ItemBagManager : MonoBehaviour
             return;
 
         eqip_info.SetActive(false);
+        SellExit();
         OnClick_Enhace_Exit();
         eqip_info_flag = false;
         blackpannel.SetActive(false);
@@ -461,7 +466,8 @@ public class ItemBagManager : MonoBehaviour
                     enhance_money = int.Parse(enhance_data[28]);
                     break;
             }
-            Enhace_info.transform.Find("강화비용텍스트").GetComponent<Text>().text = "비용 : " + enhance_money.ToString() + "(원)";
+            string tempcurrent = string.Format("{0:#,###}", enhance_money);
+            Enhace_info.transform.Find("강화비용텍스트").GetComponent<Text>().text = "비용 : " + tempcurrent.ToString() + "(원)";
         }
         else
         {
@@ -521,6 +527,7 @@ public class ItemBagManager : MonoBehaviour
         OnClickEnhance();
         Eqip_Info();
         OnClickEqip();
+        Set_Player_Info();
         enhance_coroutine_flag = false;
     }
     IEnumerator Enhance_Fail_Coroutine()
@@ -535,5 +542,99 @@ public class ItemBagManager : MonoBehaviour
         Eqip_Info();
         OnClickEqip();
         enhance_coroutine_flag = false;
+    }
+
+    int sell_money;
+    public void OnClickSell()
+    {
+        blackpannel.SetActive(true);
+        sell.SetActive(true);
+
+        float grade = 1;
+        float temp_money = 0;
+
+        //등급 적용 
+        switch (GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).grade)
+        {
+            case "Normal":
+                grade = 1;
+                break;
+            case "Rare":
+                grade = 1.5f;
+                break;
+            case "Unique":
+                grade = 2f;
+                break;
+            case "Epic":
+                grade = 2.5f;
+                break;
+            case "Legend":
+                grade = 3f;
+                break;
+        }
+
+        // 수식어 및 강화횟수 가격
+        List<string> data = GameManager.instance.databaseManager.Eqip_Sell_DB.GetRowData(select_eqip_item.enhance + 1);
+        switch (select_eqip_item.prefix)
+        {
+            case "":
+                temp_money = float.Parse(data[2]);
+                break;
+            case "쓸만한":
+                temp_money = float.Parse(data[4]);
+                break;
+            case "준수한":
+                temp_money = float.Parse(data[6]);
+                break;
+            case "희귀한":
+                temp_money = float.Parse(data[8]);
+                break;
+            case "특별한":
+                temp_money = float.Parse(data[10]);
+                break;
+            case "뛰어난":
+                temp_money = float.Parse(data[12]);
+                break;
+            case "화려한":
+                temp_money = float.Parse(data[14]);
+                break;
+            case "달빛":
+                temp_money = float.Parse(data[16]);
+                break;
+            case "태양빛":
+                temp_money = float.Parse(data[18]);
+                break;
+            case "온누리의":
+                temp_money = float.Parse(data[20]);
+                break;
+            case "우주의":
+                temp_money = float.Parse(data[22]);
+                break;
+            case "신의":
+                temp_money = float.Parse(data[24]);
+                break;
+        }
+
+        sell_money = (int)(grade * temp_money);
+
+        // 비용 적용 
+        string tempcurrent = string.Format("{0:#,###}", sell_money);
+        sell.transform.GetChild(0).Find("가격_텍스트").GetComponent<Text>().text = tempcurrent + "원";
+    }
+
+    public void SellExit()
+    {
+        sell.SetActive(false);
+    }
+
+    public void SellYes() //판매
+    {
+        GameManager.instance.userInfo.RemoveEqip(select_eqip_item);
+        
+        // 돈 올리기 
+        Money.instance.PlusMoney(sell_money);
+
+        Set_Player_Info();
+        OnClick_Eqip_Info_Exit();
     }
 }
