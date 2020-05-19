@@ -60,7 +60,6 @@ public class DataBase
         rowSize = line[0].Split('\t').Length;
         sentence = new string[lineSize, rowSize];
 
-
         string[] row = line[columeInt].Split('\t');
 
         for (int i = 0; i < row.Length; i++)

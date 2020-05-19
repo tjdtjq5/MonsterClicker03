@@ -104,7 +104,6 @@ public class ItemBagManager : MonoBehaviour
 
 
     //아이템 아이콘 클릭 
-
     public void Update()
     {
         if (first_touch_flag)
@@ -118,14 +117,25 @@ public class ItemBagManager : MonoBehaviour
             theCam_rotation.localRotation = Quaternion.Euler(theCam_rotation.localRotation.x + temp_y * sensibility, theCam_rotation.localRotation.y + temp_x * sensibility, theCam_rotation.localRotation.z);
         }
 
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButton(0))
         {
             Vector2 mousePos = Input.mousePosition;
+            RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos, Vector2.zero, 10f);
+
+            for (int i = 0; i < hits.Length; i++)
+            {
+                if (hits[i])
+                {
+                    string name = hits[i].transform.gameObject.name; // 터치 못하게 박스 컬라이더로 막기
+                    if (name.Contains("ScreenTouch") || name.Contains("Under_pannel"))      
+                        return;
+                }
+            }
             RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 10f);
             if (hit)
             {
                 string name = hit.transform.gameObject.name;
-                if (name.Contains("아이템_칸") && !eqip_info_flag)
+                if (!name.Contains("ScreenTouch") && name.Contains("아이템_칸") && !eqip_info_flag)
                 {
                     string temp_num = name.Split('(')[1];
                     int num = int.Parse(temp_num.Split(')')[0]);
@@ -324,9 +334,9 @@ public class ItemBagManager : MonoBehaviour
             return;
 
         eqip_info.SetActive(false);
-        blackpannel.SetActive(false);
         OnClick_Enhace_Exit();
         eqip_info_flag = false;
+        blackpannel.SetActive(false);
     }
 
     bool eqip_info_flag;
@@ -336,7 +346,7 @@ public class ItemBagManager : MonoBehaviour
         blackpannel.SetActive(true);
         eqip_info.SetActive(true);
 
-        eqip_info.transform.Find("item_name").GetComponent<Text>().text = select_eqip_item.prefix + " " + GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_Name;
+        eqip_info.transform.Find("item_name").GetChild(0).GetComponent<Text>().text = select_eqip_item.prefix + " " + GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).eqip_Name;
         switch (GameManager.instance.itemManager.WhatEqip(select_eqip_item.eqip).grade)
         {
             case "Normal":
@@ -407,50 +417,57 @@ public class ItemBagManager : MonoBehaviour
 
         int current_enhance = select_eqip_item.enhance;
 
-        List<string> enhance_data = GameManager.instance.databaseManager.Enhance_DB.GetRowData(current_enhance + 1);
-        string prefix = select_eqip_item.prefix;
-
-        switch (prefix)
+        if((current_enhance < 15))
         {
-            case "":
-                enhance_money = int.Parse(enhance_data[6]);
-                break;
-            case "쓸만한":
-                enhance_money = int.Parse(enhance_data[8]);
-                break;
-            case "준수한":
-                enhance_money = int.Parse(enhance_data[10]);
-                break;
-            case "희귀한":
-                enhance_money = int.Parse(enhance_data[12]);
-                break;
-            case "특별한":
-                enhance_money = int.Parse(enhance_data[14]);
-                break;
-            case "뛰어난":
-                enhance_money = int.Parse(enhance_data[16]);
-                break;
-            case "화려한":
-                enhance_money = int.Parse(enhance_data[18]);
-                break;
-            case "달빛":
-                enhance_money = int.Parse(enhance_data[20]);
-                break;
-            case "태양빛":
-                enhance_money = int.Parse(enhance_data[22]);
-                break;
-            case "온누리의":
-                enhance_money = int.Parse(enhance_data[24]);
-                break;
-            case "우주의":
-                enhance_money = int.Parse(enhance_data[26]);
-                break;
-            case "신의":
-                enhance_money = int.Parse(enhance_data[28]);
-                break;
+            List<string> enhance_data = GameManager.instance.databaseManager.Enhance_DB.GetRowData(current_enhance + 1);
+            string prefix = select_eqip_item.prefix;
+
+            switch (prefix)
+            {
+                case "":
+                    enhance_money = int.Parse(enhance_data[6]);
+                    break;
+                case "쓸만한":
+                    enhance_money = int.Parse(enhance_data[8]);
+                    break;
+                case "준수한":
+                    enhance_money = int.Parse(enhance_data[10]);
+                    break;
+                case "희귀한":
+                    enhance_money = int.Parse(enhance_data[12]);
+                    break;
+                case "특별한":
+                    enhance_money = int.Parse(enhance_data[14]);
+                    break;
+                case "뛰어난":
+                    enhance_money = int.Parse(enhance_data[16]);
+                    break;
+                case "화려한":
+                    enhance_money = int.Parse(enhance_data[18]);
+                    break;
+                case "달빛":
+                    enhance_money = int.Parse(enhance_data[20]);
+                    break;
+                case "태양빛":
+                    enhance_money = int.Parse(enhance_data[22]);
+                    break;
+                case "온누리의":
+                    enhance_money = int.Parse(enhance_data[24]);
+                    break;
+                case "우주의":
+                    enhance_money = int.Parse(enhance_data[26]);
+                    break;
+                case "신의":
+                    enhance_money = int.Parse(enhance_data[28]);
+                    break;
+            }
+            Enhace_info.transform.Find("강화비용텍스트").GetComponent<Text>().text = "비용 : " + enhance_money.ToString() + "(원)";
+        }
+        else
+        {
+            Enhace_info.transform.Find("강화비용텍스트").GetComponent<Text>().text = "더이상 강화 불가";
         }
 
-        Enhace_info.transform.Find("강화비용텍스트").GetComponent<Text>().text = "비용 : " + enhance_money.ToString() + "(원)";
     }
 
     public void OnClick_Enhace_Exit()
@@ -473,7 +490,7 @@ public class ItemBagManager : MonoBehaviour
 
         int current_enhance = select_eqip_item.enhance;
 
-        if (current_enhance >= 15 && GameManager.instance.userInfo.GetMoney() < enhance_money) // 돈이 부족하거나 강화단계가 15 이상이면 리턴
+        if (current_enhance >= 15 || GameManager.instance.userInfo.GetMoney() < enhance_money) // 돈이 부족하거나 강화단계가 15 이상이면 리턴
             return;
 
         List<string> enhance_data = GameManager.instance.databaseManager.Enhance_DB.GetRowData(current_enhance + 1);
@@ -516,6 +533,7 @@ public class ItemBagManager : MonoBehaviour
         Enhace_info.GetComponent<Animator>().SetBool("enhance_fail", false);
         OnClickEnhance();
         Eqip_Info();
+        OnClickEqip();
         enhance_coroutine_flag = false;
     }
 }

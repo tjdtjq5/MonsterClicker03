@@ -53,7 +53,7 @@ public class UserInfo : MonoBehaviour
         userNickname = "유저이름";
         petName = "펫 이름";
         achievement = "업적이름 ???";
-        money = 1000000;
+        money = 10000000;
         level = 1;
         exp = 0;
         carrotLevel = 1;
@@ -534,67 +534,103 @@ public class User_Eqip_Info
 
     public int Atk()
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_atk;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (int)(origin_atk * percent);
     }
     public int Atk(int enhance)
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_atk;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (int)(origin_atk * percent);
     }
 
     public float Critical()
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_critical;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_critical * percent);
     }
     public float Critical(int enhance)
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_critical;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_critical * percent);
     }
 
     public float Shield()
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_shield;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_shield * percent);
     }
     public float Shield(int enhance)
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_shield;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_shield * percent);
     }
 
     public int Hp()
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_hp;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (int)(origin_hp * percent);
     }
     public int Hp(int enhance)
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_hp;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (int)(origin_hp * percent);
     }
 
     public float AtkSpeed()
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_atkspeed;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_atkspeed * percent);
     }
     public float AtkSpeed(int enhance)
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_atkspeed;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_atkspeed * percent);
     }
 
     public float Speed()
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_speed;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_speed * percent);
     }
     public float Speed(int enhance)
     {
-        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance + 1)[4]);
+        if (enhance <= 0)
+            return origin_speed;
+
+        float percent = float.Parse(GameManager.instance.databaseManager.Enhance_DB.GetRowData(enhance)[4]);
         return (origin_speed * percent);
     }
 }
