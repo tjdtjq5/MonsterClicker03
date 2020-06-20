@@ -105,7 +105,6 @@ public class ItemBagManager : MonoBehaviour
     }
 
 
-    //아이템 아이콘 클릭 
     public void Update()
     {
         if (first_touch_flag)
@@ -119,38 +118,16 @@ public class ItemBagManager : MonoBehaviour
             theCam_rotation.localRotation = Quaternion.Euler(theCam_rotation.localRotation.x + temp_y * sensibility, theCam_rotation.localRotation.y + temp_x * sensibility, theCam_rotation.localRotation.z);
         }
 
-        if (Input.GetMouseButton(0))
+    }
+
+    //아이템 아이콘 클릭 
+    public void ItemCellBtn(int num)
+    {
+        if (num < GameManager.instance.userInfo.player_eqip_list.Count)
         {
-            Vector2 mousePos = Input.mousePosition;
-            RaycastHit2D[] hits = Physics2D.RaycastAll(mousePos, Vector2.zero, 10f);
-
-            for (int i = 0; i < hits.Length; i++)
-            {
-                if (hits[i])
-                {
-                    string name = hits[i].transform.gameObject.name; // 터치 못하게 박스 컬라이더로 막기
-                    if (name.Contains("ScreenTouch") || name.Contains("Under_pannel"))      
-                        return;
-                }
-            }
-            RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 10f);
-            if (hit)
-            {
-                string name = hit.transform.gameObject.name;
-                if (!name.Contains("ScreenTouch") && name.Contains("아이템_칸") && !eqip_info_flag)
-                {
-                    string temp_num = name.Split('(')[1];
-                    int num = int.Parse(temp_num.Split(')')[0]);
-
-                    if(num < GameManager.instance.userInfo.player_eqip_list.Count)
-                    {
-                        Set_ItemClick(eqip_pannel, num);
-
-                        select_eqip_item = GameManager.instance.userInfo.player_eqip_list[num];
-                        Eqip_Info();
-                    }
-                }
-            }
+            Set_ItemClick(eqip_pannel, num);
+            select_eqip_item = GameManager.instance.userInfo.player_eqip_list[num];
+            Eqip_Info();
         }
     }
 
@@ -183,8 +160,8 @@ public class ItemBagManager : MonoBehaviour
         player_info.Find("shield").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetSheild(); 
         player_info.Find("hp").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetHp(GameManager.instance.userInfo.GetLevel(), GameManager.instance.userInfo.GetEnhance(EnhanceKind.hpEnhance));
         player_info.Find("critical").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetCritical() + "%";
-        player_info.Find("atkspeed").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetAtkSpeed() + "S";
-        player_info.Find("speed").GetChild(0).GetComponent<Text>().text = "" + GameManager.instance.GetSpeed() + "S";
+        player_info.Find("atkspeed").GetChild(0).GetComponent<Text>().text = "" + System.Math.Truncate(GameManager.instance.GetAtkSpeed() * 100) / 100 + "S";
+        player_info.Find("speed").GetChild(0).GetComponent<Text>().text = "" + System.Math.Truncate(GameManager.instance.GetSpeed() * 100) / 100 + "S";
     }
 
     [Header("잠금 이미지")]
